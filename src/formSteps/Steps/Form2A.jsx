@@ -1,16 +1,13 @@
+import { useState } from "react";
+import BackNext from "@/components/Form/BackNext";
+import { years } from "@/lib/constants";
 
-import React, { useState } from "react";
-import BackNext from "../components/Form/BackNext";
-import { years } from "../data/util";
-
-function Form2A({ currYear, updateFormData, nextStep, backStep }) {
-  // UseState Variables -------------------------------------------------
+export default function Form2A({ currYear, updateFormData, nextStep, backStep }) {
   const [selectedYear, setSelectedYear] = useState(years.indexOf(currYear) + 1);
   const [errorState, setErrorState] = useState(false);
   const handleYearClick = (yearIndex) => {
     setSelectedYear(yearIndex);
   };
-  // Next
   const handleNextClick = () => {
     if (selectedYear != 0) {
       updateFormData({ year: years[selectedYear - 1] });
@@ -19,7 +16,6 @@ function Form2A({ currYear, updateFormData, nextStep, backStep }) {
       setErrorState(true);
     }
   };
-  // Back
   const handleBackClick = () => {
     backStep();
   };
@@ -60,6 +56,3 @@ function Form2A({ currYear, updateFormData, nextStep, backStep }) {
     </>
   );
 }
-
-
-export default Form2A;

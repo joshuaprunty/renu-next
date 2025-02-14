@@ -1,12 +1,9 @@
-
-import React, { useState } from "react";
+import { useState } from "react";
 import BackNext from "../components/Form/BackNext";
 
-function Form2D({ currFulfill, updateFormData, nextStep, backStep }) {
-  // Content Variables --------------------------------------------
+export default function Form2D({ currFulfill, updateFormData, nextStep, backStep }) {
   const fulfills = ["Distribution", "Major/Minor", "Elective"];
 
-  // UseState Variables -------------------------------------------------
   const [selectedFulfills, setSelectedFulfills] = useState(
     fulfills.indexOf(currFulfill) + 1
   );
@@ -67,6 +64,3 @@ function Form2D({ currFulfill, updateFormData, nextStep, backStep }) {
     </div>
   );
 }
-
-
-export default Form2D;

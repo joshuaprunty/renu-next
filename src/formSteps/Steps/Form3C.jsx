@@ -1,19 +1,14 @@
-
-import React, { useState } from "react";
+import { useState } from "react";
 import BackNext from "../components/Form/BackNext";
 
-function Form3C({ currLoc, updateFormData, nextStep, backStep }) {
-  // Content Variables --------------------------------------------
+export default function Form3C({ currLoc, updateFormData, nextStep, backStep }) {
   const locs = [
     "North Campus",
     "Central Campus",
     "South Campus",
     "No Preference",
   ];
-
-  // UseState Variables -------------------------------------------------
   const [selectedLoc, setSelectedLoc] = useState(locs.indexOf(currLoc));
-
   const [errorState, setErrorState] = useState(false);
 
   function handleLocClick(locIndex) {
@@ -76,6 +71,3 @@ function Form3C({ currLoc, updateFormData, nextStep, backStep }) {
     </div>
   );
 }
-
-
-export default Form3C;

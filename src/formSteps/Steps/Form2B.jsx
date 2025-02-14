@@ -1,10 +1,8 @@
+import { useState } from "react";
+import BackNext from "@/components/Form/BackNext";
+import { schools } from "@/lib/constants";
 
-import React, { useState } from "react";
-import BackNext from "../components/Form/BackNext";
-import { schools } from "../data/util";
-
-function Form2B({ currSchool, updateFormData, nextStep, backStep }) {
-  // UseState Variables -------------------------------------------------
+export default function Form2B({ currSchool, updateFormData, nextStep, backStep }) {
   const [selectedSchool, setSelectedSchool] = useState(
     schools.indexOf(currSchool) + 1
   );
@@ -67,6 +65,3 @@ function Form2B({ currSchool, updateFormData, nextStep, backStep }) {
     </>
   );
 }
-
-
-export default Form2B;

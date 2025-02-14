@@ -1,14 +1,9 @@
-
-import React, { useState } from "react";
+import { useState } from "react";
 import BackNext from "../components/Form/BackNext";
 
-function Form3B({ currDiff, updateFormData, nextStep, backStep }) {
-  // Content Variables --------------------------------------------
+export default function Form3B({ currDiff, updateFormData, nextStep, backStep }) {
   const diffs = ["1 (Easy A)", "2", "3 (Average)", "4", "5 (Most Challenging)"];
-
-  // UseState Variables -------------------------------------------------
   const [selectedDiff, setSelectedDiff] = useState(diffs.indexOf(currDiff) + 1);
-
   const [errorState, setErrorState] = useState(false);
 
   const handleNextClick = () => {
@@ -63,6 +58,3 @@ function Form3B({ currDiff, updateFormData, nextStep, backStep }) {
     </div>
   );
 }
-
-
-export default Form3B;

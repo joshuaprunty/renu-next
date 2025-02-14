@@ -1,6 +1,6 @@
 import "ldrs/ripples";
 
-function FormLoad() {
+export default function FormLoad() {
   return (
     <div className="flex flex-col justify-center items-center w-1/2">
       <div className="w-full flex flex-col justify-center items-center">
@@ -15,5 +15,3 @@ function FormLoad() {
     </div>
   );
 }
-
-export default FormLoad;

@@ -1,12 +1,8 @@
-
-import React, { useState } from "react";
+import { useState } from "react";
 import BackNext from "../components/Form/BackNext";
 
-function Form3E({ currTime, updateFormData, nextStep, backStep }) {
-  // Content Variables --------------------------------------------
+export default function Form3E({ currTime, updateFormData, nextStep, backStep }) {
   const times = ["Morning", "Afternoon", "Evening", "No Preference"];
-
-  // UseState Variables -------------------------------------------------
   const [selectedTime, setSelectedTime] = useState(times.indexOf(currTime));
 
   const handleNextClick = () => {
@@ -70,5 +66,3 @@ function Form3E({ currTime, updateFormData, nextStep, backStep }) {
     </div>
   );
 }
-
-export default Form3E;

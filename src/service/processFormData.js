@@ -1,4 +1,4 @@
-import courseData from "@/data/courses.json";
+import courseData from "@/lib/courses.json";
 
 function convertScale(oldScore) {
   return ((oldScore - 1) / 5) * 10;

@@ -1,8 +1,6 @@
-
-import React from "react";
 import BackNext from "../components/Form/BackNext";
 
-function Form3A({ updateFormData, nextStep, backStep }) {
+export default function Form3A({ updateFormData, nextStep, backStep }) {
   const handleNextClick = () => {
     nextStep();
   };
@@ -39,5 +37,3 @@ function Form3A({ updateFormData, nextStep, backStep }) {
     </>
   );
 }
-
-export default Form3A;

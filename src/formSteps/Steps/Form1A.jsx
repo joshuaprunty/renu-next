@@ -1,8 +1,6 @@
-import React from "react";
 import { Button } from "@/components/ui/button";
 
-
-function Form1A({ nextStep }) {
+export default function Form1A({ nextStep }) {
   const handleStartClick = () => {
     nextStep();
   };
@@ -20,5 +18,3 @@ function Form1A({ nextStep }) {
     </div>
   );
 }
-
-export default Form1A;

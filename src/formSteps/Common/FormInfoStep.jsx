@@ -1,8 +1,6 @@
-
-import React from "react";
 import BackNext from "../components/Form/BackNext";
 
-function Form1B({ nextStep, backStep }) {
+export default function FormInfoStep({ nextStep, backStep, heading, subheading }) {
   const handleNextClick = () => {
     nextStep();
   };
@@ -14,11 +12,8 @@ function Form1B({ nextStep, backStep }) {
   return (
     <div className="flex flex-col justify-center items-center w-1/2">
       <div className="w-7/8 d-grid gap-2 position-relative z-2">
-        <h1 className="text-center">Basic Info</h1>
-        <p className="text-center">
-          This section will ask you basic info about your academic status at
-          Northwestern to help determine courses that fit you.
-        </p>
+        <h1 className="text-center">{heading}</h1>
+        <p className="text-center">{subheading}</p>
         <BackNext
           handleBackClick={handleBackClick}
           handleNextClick={handleNextClick}
@@ -28,6 +23,3 @@ function Form1B({ nextStep, backStep }) {
     </div>
   );
 }
-
-
-export default Form1B;

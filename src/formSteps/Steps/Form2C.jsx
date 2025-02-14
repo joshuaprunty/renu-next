@@ -1,14 +1,10 @@
-
-//-------------------------------------------------------------------------------------------------------import React, { useState } from "react";
 import { useState } from "react";
-import BackNext from "../components/Form/BackNext";
-import React from "react";
+import BackNext from "@/components/Form/BackNext";
 import Select from "react-select";
-import majors from "../data/majors.json";
-import { fullSchools } from "../data/util";
+import majors from "@/lib/majors.json";
+import { fullSchools } from "@/lib/constants";
 
-
-function Form2C({
+export default function Form2C({
   currSchool,
   currMajors,
   updateFormData,
@@ -21,7 +17,6 @@ function Form2C({
     label: major,
   }));
 
-  // UseState Variables -------------------------------------------------
   const [selectedMajors, setSelectedMajors] = useState(
     currMajors.map((major) => exampleOptions.indexOf(major))
   );
@@ -29,8 +24,6 @@ function Form2C({
   const [errorState, setErrorState] = useState(false);
   const [selectValue, setSelectValue] = useState(null);
 
-  // Function Declarations ---------------------------------------------
-  // Next
   const handleNextClick = () => {
     if (selectedMajors.length > 0) {
       const updates = {
@@ -43,12 +36,10 @@ function Form2C({
     }
   };
 
-  // Back
   const handleBackClick = () => {
     backStep();
   };
 
-  // Major Select
   const handleSelectMajor = (selectedOption) => {
     const value = selectedOption ? selectedOption.value : null;
     if (value && !selectedMajors.includes(value)) {
@@ -57,7 +48,6 @@ function Form2C({
     setSelectValue(null);
   };
 
-  // Major Remove
   const handleRemoveMajor = (valueToRemove) => {
     setSelectedMajors(
       selectedMajors.filter((value) => value !== valueToRemove)
@@ -111,6 +101,3 @@ function Form2C({
     </div>
   );
 }
-
-
-export default Form2C;

@@ -1,9 +1,7 @@
-
-import React, { useState } from "react";
+import { useState } from "react";
 import BackNext from "../components/Form/BackNext";
 
-function Form3D({ currDay, updateFormData, nextStep, backStep }) {
-  // Content Variables --------------------------------------------
+export default function Form3D({ currDay, updateFormData, nextStep, backStep }) {
   const days = [
     "Monday / Wednesday / Friday",
     "Tuesday / Thursday",
@@ -72,6 +70,3 @@ function Form3D({ currDay, updateFormData, nextStep, backStep }) {
     </div>
   );
 }
-
-
-export default Form3D;

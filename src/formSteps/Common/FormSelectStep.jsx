@@ -1,7 +1,7 @@
 import { useState } from "react";
 import BackNext from "../components/Form/BackNext";
 
-function FormSelectStep({
+export default function FormSelectStep({
   heading,
   options,
   currSelection,
@@ -10,11 +10,10 @@ function FormSelectStep({
   backStep,
   datakey,
 }) {
-
   const [selectedOption, setselectedOption] = useState(
     options.indexOf(currSelection) + 1
   );
-
+  
   const [errorState, setErrorState] = useState(false);
 
   const handleOptionClick = (optionindex) => {
@@ -71,6 +70,3 @@ function FormSelectStep({
     </>
   );
 }
-
-
-export default FormSelectStep;
