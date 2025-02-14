@@ -1,0 +1,562 @@
+[
+  {
+    "id": 1,
+    "title": "COMP-SCI 213",
+    "professor": "Brandon Ghena",
+    "ctec": {
+      "overallInstruction": 5.61,
+      "overallCourse": 5.02,
+      "learned": 5.42,
+      "challenge": 5.38,
+      "stimulus": 5.39,
+      "hours": 7.2
+    },
+    "demoSchool": {
+      "SESP": 0.007,
+      "Communications": 0.027,
+      "McCormick": 0.399,
+      "Medill": 0.007,
+      "Bienen": 0,
+      "Weinberg": 0.561
+    },
+    "demoYear": {
+      "Freshman": 0.034,
+      "Sophomore": 0.633,
+      "Junior": 0.286,
+      "Senior": 0.048
+    },
+    "demoRequirement": {
+      "Distribution": 0,
+      "Major/Minor": 0.959,
+      "Elective": 0.014,
+      "Non-Degree": 0,
+      "None": 0.07,
+      "Other": 0.02
+    }
+  },
+  {
+    "id": 2,
+    "title": "MATH 101",
+    "professor": "Alice Johnson",
+    "ctec": {
+      "overallInstruction": 4.8,
+      "overallCourse": 4.5,
+      "learned": 4.7,
+      "challenge": 4.9,
+      "stimulus": 4.6,
+      "hours": 5.5
+    },
+    "demoSchool": {
+      "SESP": 0.01,
+      "Communications": 0.02,
+      "McCormick": 0.45,
+      "Medill": 0.005,
+      "Bienen": 0.003,
+      "Weinberg": 0.52
+    },
+    "demoYear": {
+      "Freshman": 0.5,
+      "Sophomore": 0.3,
+      "Junior": 0.15,
+      "Senior": 0.05
+    },
+    "demoRequirement": {
+      "Distribution": 0.1,
+      "Major/Minor": 0.8,
+      "Elective": 0.05,
+      "Non-Degree": 0.01,
+      "None": 0.03,
+      "Other": 0.01
+    }
+  },
+  {
+    "id": 3,
+    "title": "HIST 202",
+    "professor": "Robert Smith",
+    "ctec": {
+      "overallInstruction": 4.9,
+      "overallCourse": 4.6,
+      "learned": 4.8,
+      "challenge": 4.7,
+      "stimulus": 4.5,
+      "hours": 3.5
+    },
+    "demoSchool": {
+      "SESP": 0.02,
+      "Communications": 0.03,
+      "McCormick": 0.1,
+      "Medill": 0.01,
+      "Bienen": 0.005,
+      "Weinberg": 0.86
+    },
+    "demoYear": {
+      "Freshman": 0.1,
+      "Sophomore": 0.4,
+      "Junior": 0.4,
+      "Senior": 0.1
+    },
+    "demoRequirement": {
+      "Distribution": 0.5,
+      "Major/Minor": 0.4,
+      "Elective": 0.05,
+      "Non-Degree": 0.02,
+      "None": 0.02,
+      "Other": 0.01
+    }
+  },
+  {
+    "id": 4,
+    "title": "ENG 310",
+    "professor": "Emily Carter",
+    "ctec": {
+      "overallInstruction": 5.0,
+      "overallCourse": 4.8,
+      "learned": 5.0,
+      "challenge": 4.6,
+      "stimulus": 4.9,
+      "hours": 4.0
+    },
+    "demoSchool": {
+      "SESP": 0.015,
+      "Communications": 0.25,
+      "McCormick": 0.05,
+      "Medill": 0.02,
+      "Bienen": 0.01,
+      "Weinberg": 0.65
+    },
+    "demoYear": {
+      "Freshman": 0.05,
+      "Sophomore": 0.25,
+      "Junior": 0.5,
+      "Senior": 0.2
+    },
+    "demoRequirement": {
+      "Distribution": 0.2,
+      "Major/Minor": 0.7,
+      "Elective": 0.05,
+      "Non-Degree": 0.01,
+      "None": 0.03,
+      "Other": 0.01
+    }
+  },
+  {
+    "id": 5,
+    "title": "PHYS 142",
+    "professor": "Mark Lee",
+    "ctec": {
+      "overallInstruction": 4.7,
+      "overallCourse": 4.4,
+      "learned": 4.6,
+      "challenge": 5.0,
+      "stimulus": 4.3,
+      "hours": 6.0
+    },
+    "demoSchool": {
+      "SESP": 0.005,
+      "Communications": 0.01,
+      "McCormick": 0.7,
+      "Medill": 0.004,
+      "Bienen": 0,
+      "Weinberg": 0.285
+    },
+    "demoYear": {
+      "Freshman": 0.2,
+      "Sophomore": 0.5,
+      "Junior": 0.25,
+      "Senior": 0.05
+    },
+    "demoRequirement": {
+      "Distribution": 0.05,
+      "Major/Minor": 0.9,
+      "Elective": 0.03,
+      "Non-Degree": 0,
+      "None": 0.01,
+      "Other": 0.01
+    }
+  },
+  {
+    "id": 6,
+    "title": "CHEM 101",
+    "professor": "Nancy Allen",
+    "ctec": {
+      "overallInstruction": 4.5,
+      "overallCourse": 4.2,
+      "learned": 4.4,
+      "challenge": 4.8,
+      "stimulus": 4.1,
+      "hours": 5.8
+    },
+    "demoSchool": {
+      "SESP": 0.008,
+      "Communications": 0.015,
+      "McCormick": 0.6,
+      "Medill": 0.007,
+      "Bienen": 0.002,
+      "Weinberg": 0.368
+    },
+    "demoYear": {
+      "Freshman": 0.3,
+      "Sophomore": 0.4,
+      "Junior": 0.2,
+      "Senior": 0.1
+    },
+    "demoRequirement": {
+      "Distribution": 0.1,
+      "Major/Minor": 0.85,
+      "Elective": 0.02,
+      "Non-Degree": 0.01,
+      "None": 0.02,
+      "Other": 0.02
+    }
+  },
+  {
+    "id": 7,
+    "title": "BIO 152",
+    "professor": "James Franco",
+    "ctec": {
+      "overallInstruction": 4.9,
+      "overallCourse": 4.7,
+      "learned": 4.8,
+      "challenge": 4.9,
+      "stimulus": 4.6,
+      "hours": 6.5
+    },
+    "demoSchool": {
+      "SESP": 0.012,
+      "Communications": 0.018,
+      "McCormick": 0.55,
+      "Medill": 0.005,
+      "Bienen": 0.001,
+      "Weinberg": 0.411
+    },
+    "demoYear": {
+      "Freshman": 0.25,
+      "Sophomore": 0.45,
+      "Junior": 0.25,
+      "Senior": 0.05
+    },
+    "demoRequirement": {
+      "Distribution": 0.08,
+      "Major/Minor": 0.87,
+      "Elective": 0.03,
+      "Non-Degree": 0.01,
+      "None": 0.01,
+      "Other": 0.01
+    }
+  },
+  {
+    "id": 8,
+    "title": "PSYCH 230",
+    "professor": "Laura Beth",
+    "ctec": {
+      "overallInstruction": 5.2,
+      "overallCourse": 5.0,
+      "learned": 5.1,
+      "challenge": 4.8,
+      "stimulus": 5.0,
+      "hours": 4.2
+    },
+    "demoSchool": {
+      "SESP": 0.02,
+      "Communications": 0.1,
+      "McCormick": 0.08,
+      "Medill": 0.03,
+      "Bienen": 0.008,
+      "Weinberg": 0.76
+    },
+    "demoYear": {
+      "Freshman": 0.1,
+      "Sophomore": 0.3,
+      "Junior": 0.4,
+      "Senior": 0.2
+    },
+    "demoRequirement": {
+      "Distribution": 0.3,
+      "Major/Minor": 0.6,
+      "Elective": 0.08,
+      "Non-Degree": 0.01,
+      "None": 0.01,
+      "Other": 0
+    }
+  },
+  {
+    "id": 9,
+    "title": "STAT 200",
+    "professor": "James Holden",
+    "ctec": {
+      "overallInstruction": 4.8,
+      "overallCourse": 4.5,
+      "learned": 4.7,
+      "challenge": 4.2,
+      "stimulus": 4.5,
+      "hours": 3.5
+    },
+    "demoSchool": {
+      "SESP": 0.01,
+      "Communications": 0.05,
+      "McCormick": 0.4,
+      "Medill": 0.02,
+      "Bienen": 0.01,
+      "Weinberg": 0.51
+    },
+    "demoYear": {
+      "Freshman": 0.25,
+      "Sophomore": 0.5,
+      "Junior": 0.2,
+      "Senior": 0.05
+    },
+    "demoRequirement": {
+      "Distribution": 0.2,
+      "Major/Minor": 0.7,
+      "Elective": 0.09,
+      "Non-Degree": 0.005,
+      "None": 0.005,
+      "Other": 0
+    }
+  },
+  {
+    "id": 10,
+    "title": "ENG-LIT 210",
+    "professor": "Naomi Nagata",
+    "ctec": {
+      "overallInstruction": 4.9,
+      "overallCourse": 4.6,
+      "learned": 4.8,
+      "challenge": 3.8,
+      "stimulus": 4.7,
+      "hours": 3.0
+    },
+    "demoSchool": {
+      "SESP": 0.03,
+      "Communications": 0.15,
+      "McCormick": 0.05,
+      "Medill": 0.1,
+      "Bienen": 0.02,
+      "Weinberg": 0.65
+    },
+    "demoYear": {
+      "Freshman": 0.3,
+      "Sophomore": 0.4,
+      "Junior": 0.2,
+      "Senior": 0.1
+    },
+    "demoRequirement": {
+      "Distribution": 0.25,
+      "Major/Minor": 0.5,
+      "Elective": 0.2,
+      "Non-Degree": 0.03,
+      "None": 0.02,
+      "Other": 0
+    }
+  },
+  {
+    "id": 11,
+    "title": "BIOCHEM 301",
+    "professor": "Amos Burton",
+    "ctec": {
+      "overallInstruction": 4.6,
+      "overallCourse": 4.4,
+      "learned": 4.5,
+      "challenge": 4.9,
+      "stimulus": 4.3,
+      "hours": 5.0
+    },
+    "demoSchool": {
+      "SESP": 0,
+      "Communications": 0.02,
+      "McCormick": 0.3,
+      "Medill": 0.01,
+      "Bienen": 0,
+      "Weinberg": 0.67
+    },
+    "demoYear": {
+      "Freshman": 0.1,
+      "Sophomore": 0.3,
+      "Junior": 0.4,
+      "Senior": 0.2
+    },
+    "demoRequirement": {
+      "Distribution": 0.1,
+      "Major/Minor": 0.8,
+      "Elective": 0.09,
+      "Non-Degree": 0.005,
+      "None": 0.005,
+      "Other": 0
+    }
+  },
+  {
+    "id": 12,
+    "title": "COMP-ENG 400",
+    "professor": "Chrisjen Avasarala",
+    "ctec": {
+      "overallInstruction": 5.0,
+      "overallCourse": 4.8,
+      "learned": 5.0,
+      "challenge": 4.7,
+      "stimulus": 4.9,
+      "hours": 4.5
+    },
+    "demoSchool": {
+      "SESP": 0,
+      "Communications": 0.01,
+      "McCormick": 0.8,
+      "Medill": 0,
+      "Bienen": 0,
+      "Weinberg": 0.19
+    },
+    "demoYear": {
+      "Freshman": 0.05,
+      "Sophomore": 0.15,
+      "Junior": 0.4,
+      "Senior": 0.4
+    },
+    "demoRequirement": {
+      "Distribution": 0.05,
+      "Major/Minor": 0.9,
+      "Elective": 0.04,
+      "Non-Degree": 0.005,
+      "None": 0.005,
+      "Other": 0
+    }
+  },
+  {
+    "id": 13,
+    "title": "DATA-SCI 201",
+    "professor": "Fred Johnson",
+    "ctec": {
+      "overallInstruction": 4.7,
+      "overallCourse": 4.5,
+      "learned": 4.6,
+      "challenge": 4.3,
+      "stimulus": 4.4,
+      "hours": 3.8
+    },
+    "demoSchool": {
+      "SESP": 0.01,
+      "Communications": 0.04,
+      "McCormick": 0.55,
+      "Medill": 0.02,
+      "Bienen": 0.01,
+      "Weinberg": 0.37
+    },
+    "demoYear": {
+      "Freshman": 0.2,
+      "Sophomore": 0.4,
+      "Junior": 0.3,
+      "Senior": 0.1
+    },
+    "demoRequirement": {
+      "Distribution": 0.15,
+      "Major/Minor": 0.75,
+      "Elective": 0.09,
+      "Non-Degree": 0.005,
+      "None": 0.005,
+      "Other": 0
+    }
+  },
+  {
+    "id": 14,
+    "title": "ENV-SCI 310",
+    "professor": "Clarissa Mao",
+    "ctec": {
+      "overallInstruction": 4.5,
+      "overallCourse": 4.3,
+      "learned": 4.4,
+      "challenge": 4.1,
+      "stimulus": 4.2,
+      "hours": 3.7
+    },
+    "demoSchool": {
+      "SESP": 0.02,
+      "Communications": 0.03,
+      "McCormick": 0.25,
+      "Medill": 0.01,
+      "Bienen": 0.01,
+      "Weinberg": 0.68
+    },
+    "demoYear": {
+      "Freshman": 0.15,
+      "Sophomore": 0.35,
+      "Junior": 0.3,
+      "Senior": 0.2
+    },
+    "demoRequirement": {
+      "Distribution": 0.2,
+      "Major/Minor": 0.65,
+      "Elective": 0.1,
+      "Non-Degree": 0.03,
+      "None": 0.02,
+      "Other": 0
+    }
+  },
+  {
+    "id": 15,
+    "title": "FINANCE 220",
+    "professor": "Bobbie Draper",
+    "ctec": {
+      "overallInstruction": 4.7,
+      "overallCourse": 4.6,
+      "learned": 4.8,
+      "challenge": 4.4,
+      "stimulus": 4.5,
+      "hours": 4.0
+    },
+    "demoSchool": {
+      "SESP": 0.03,
+      "Communications": 0.1,
+      "McCormick": 0.1,
+      "Medill": 0.05,
+      "Bienen": 0.02,
+      "Weinberg": 0.7
+    },
+    "demoYear": {
+      "Freshman": 0.1,
+      "Sophomore": 0.3,
+      "Junior": 0.4,
+      "Senior": 0.2
+    },
+    "demoRequirement": {
+      "Distribution": 0.25,
+      "Major/Minor": 0.6,
+      "Elective": 0.1,
+      "Non-Degree": 0.02,
+      "None": 0.03,
+      "Other": 0
+    }
+  },
+  {
+    "id": 16,
+    "title": "GEOLOGY 101",
+    "professor": "Praxidike Meng",
+    "ctec": {
+      "overallInstruction": 4.6,
+      "overallCourse": 4.4,
+      "learned": 4.5,
+      "challenge": 3.9,
+      "stimulus": 4.3,
+      "hours": 3.2
+    },
+    "demoSchool": {
+      "SESP": 0.01,
+      "Communications": 0.02,
+      "McCormick": 0.2,
+      "Medill": 0.01,
+      "Bienen": 0.01,
+      "Weinberg": 0.75
+    },
+    "demoYear": {
+      "Freshman": 0.2,
+      "Sophomore": 0.4,
+      "Junior": 0.3,
+      "Senior": 0.1
+    },
+    "demoRequirement": {
+      "Distribution": 0.3,
+      "Major/Minor": 0.5,
+      "Elective": 0.15,
+      "Non-Degree": 0.03,
+      "None": 0.02,
+      "Other": 0
+    }
+  }
+]

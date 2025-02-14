@@ -1,0 +1,48 @@
+{
+  "Weinberg": [
+    "Art History",
+    "Biological Sciences",
+    "Chemistry",
+    "Classics",
+    "Cognitive Science",
+    "Computer Science",
+    "Economics",
+    "English",
+    "Environmental Sciences",
+    "Gender & Sexuality Studies",
+    "History",
+    "Mathematics",
+    "Psychology"
+  ],
+  "McCormick": [
+    "Applied Mathematics",
+    "Biomedical Engineering",
+    "Chemical Engineering",
+    "Civil Engineering",
+    "Computer Science",
+    "Computer Engineering",
+    "Materials Science & Engineering"
+  ],
+  "SESP": [
+    "Civic Engagement",
+    "Elementary Teaching",
+    "Human Development in Context",
+    "Learning & Organizational Change",
+    "Social Policy"
+  ],
+  "Medill": [
+    "Journalism"
+  ],
+  "Communications": [
+    "Communication Studies",
+    "Dance",
+    "Human Communication Sciences",
+    "Performance Studies",
+    "Radio/Television/Film",
+    "Theatre"
+  ],
+  "Bienen": [
+    "Bachelor of Music",
+    "Bachelor of Arts in Music"
+  ]
+}
