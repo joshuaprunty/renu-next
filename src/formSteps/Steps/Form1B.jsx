@@ -1,4 +1,4 @@
-import BackNext from "../components/Form/BackNext";
+import BackNext from "@/components/Form/BackNext";
 
 export default function Form1B({ nextStep, backStep }) {
   const handleNextClick = () => {

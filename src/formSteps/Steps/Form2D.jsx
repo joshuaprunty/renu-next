@@ -1,5 +1,5 @@
 import { useState } from "react";
-import BackNext from "../components/Form/BackNext";
+import BackNext from "@/components/Form/BackNext";
 
 export default function Form2D({ currFulfill, updateFormData, nextStep, backStep }) {
   const fulfills = ["Distribution", "Major/Minor", "Elective"];

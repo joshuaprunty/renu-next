@@ -1,5 +1,5 @@
 import { useState } from "react";
-import BackNext from "../components/Form/BackNext";
+import BackNext from "@/components/Form/BackNext";
 
 export default function Form3B({ currDiff, updateFormData, nextStep, backStep }) {
   const diffs = ["1 (Easy A)", "2", "3 (Average)", "4", "5 (Most Challenging)"];

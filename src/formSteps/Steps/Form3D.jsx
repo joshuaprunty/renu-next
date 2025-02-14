@@ -1,5 +1,5 @@
 import { useState } from "react";
-import BackNext from "../components/Form/BackNext";
+import BackNext from "@/components/Form/BackNext";
 
 export default function Form3D({ currDay, updateFormData, nextStep, backStep }) {
   const days = [
