@@ -2,7 +2,7 @@
 export default function Ternary() {
   return (
     <div className="bg-white" id="bg-white">
-      <div className="container mx-auto py-20 px-6">
+      <div className="mx-auto py-20 px-6 max-w-[100rem] border border-red-500">
         <p className="text-5xl text-center">Built for every student</p>
         <hr className="w-2/3 mx-auto mt-0 mb-5 text-black" />
         <div className="flex flex-wrap mt-4 px-4 text-center">

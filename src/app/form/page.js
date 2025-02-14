@@ -10,7 +10,7 @@ import Form2D from "@/formSteps/Form2D";
 import Form3B from "@/formSteps/Form3B";
 import FormLoad from "@/formSteps/FormLoad";
 import FormResults from "@/formSteps/FormResults";
-import { processFormData } from "@/processFormData";
+import { processFormData } from "@/service/processFormData";
 
 export default function FormWrapper() {
   const [currentStep, setCurrentStep] = useState(1);
