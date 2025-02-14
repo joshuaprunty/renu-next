@@ -5,8 +5,8 @@ import {
   where,
   addDoc,
   getDocs,
-} from "firebase/firestore";
-import firebase_app from "../config";
+} from 'firebase/firestore';
+import firebase_app from '../config';
 import { addPublicQuiz } from './publicQuizzes';
 
 const db = getFirestore(firebase_app);
@@ -18,11 +18,11 @@ export default async function saveQuiz(userId, quizData) {
   try {
     const quizRef = collection(db, `users/${userId}/quizzes`);
 
-    const q = query(quizRef, where("title", "==", quizData.title));
+    const q = query(quizRef, where('title', '==', quizData.title));
     const querySnapshot = await getDocs(q);
 
     if (!querySnapshot.empty) {
-      return { result: null, error: "A quiz with this title already exists." };
+      return { result: null, error: 'A quiz with this title already exists.' };
     }
 
     const docRef = await addDoc(quizRef, {
@@ -34,7 +34,7 @@ export default async function saveQuiz(userId, quizData) {
     if (quizData.public) {
       await addPublicQuiz(userId, {
         ...quizData,
-        originalQuizId: docRef.id
+        originalQuizId: docRef.id,
       });
     }
 

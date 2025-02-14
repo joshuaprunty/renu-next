@@ -1,4 +1,4 @@
-import courseData from "@/lib/courses.json";
+import courseData from '@/lib/courses.json';
 
 function convertScale(oldScore) {
   return ((oldScore - 1) / 5) * 10;
@@ -12,11 +12,11 @@ const yearStringToNumber = {
 };
 
 const diffStringToNumber = {
-  "1 (Easy A)": 1,
+  '1 (Easy A)': 1,
   2: 2,
-  "3 (Average)": 3,
+  '3 (Average)': 3,
   4: 4,
-  "5 (Most Challenging)": 5,
+  '5 (Most Challenging)': 5,
 };
 
 function getMaxKeyValue(obj) {

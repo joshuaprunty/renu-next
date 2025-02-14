@@ -1,5 +1,5 @@
-import { getFirestore, doc, getDoc } from "firebase/firestore";
-import firebase_app from "../config";
+import { getFirestore, doc, getDoc } from 'firebase/firestore';
+import firebase_app from '../config';
 
 const db = getFirestore(firebase_app);
 
@@ -15,10 +15,10 @@ export default async function getQuizById(userId, quizId) {
       result = { id: docSnap.id, ...docSnap.data() };
     } else {
       console.warn(`Quiz with ID ${quizId} not found.`);
-      error = "Quiz not found";
+      error = 'Quiz not found';
     }
   } catch (e) {
-    console.error("Error fetching quiz:", e);
+    console.error('Error fetching quiz:', e);
     error = e;
   }
 

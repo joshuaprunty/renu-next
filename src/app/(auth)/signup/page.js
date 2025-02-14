@@ -1,7 +1,7 @@
-'use client'
+'use client';
 
-import SignUpForm from "@/components/auth/SignUpForm";
-import Link from "next/link";
+import SignUpForm from '@/components/auth/SignUpForm';
+import Link from 'next/link';
 
 export default function Page() {
   return (
@@ -11,7 +11,12 @@ export default function Page() {
         <SignUpForm />
       </div>
       <div className="w-96 p-6">
-        <span>Already have an account? <Link href="/login" className="text-blue-500 hover:text-blue-600">Sign in</Link></span>
+        <span>
+          Already have an account?{' '}
+          <Link href="/login" className="text-blue-500 hover:text-blue-600">
+            Sign in
+          </Link>
+        </span>
       </div>
     </div>
   );

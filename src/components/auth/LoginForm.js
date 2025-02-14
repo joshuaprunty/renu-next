@@ -1,50 +1,50 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import { useRouter } from "next/navigation";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import signIn from "@/firebase/auth/signIn";
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import signIn from '@/firebase/auth/signIn';
 
 export default function LoginForm() {
   const [formData, setFormData] = useState({
-    email: "",
-    password: "",
+    email: '',
+    password: '',
   });
-  const [error, setError] = useState("");
+  const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setError("");
+    setError('');
     setIsLoading(true);
 
-    const { result, error } = await signIn(formData.email, formData.password);
+    const { error } = await signIn(formData.email, formData.password);
 
     if (error) {
       setIsLoading(false);
       switch (error.code) {
-        case "auth/invalid-email":
-          setError("Invalid email address format.");
+        case 'auth/invalid-email':
+          setError('Invalid email address format.');
           break;
-        case "auth/user-not-found":
-          setError("No account found with this email.");
+        case 'auth/user-not-found':
+          setError('No account found with this email.');
           break;
-        case "auth/wrong-password":
-          setError("Incorrect password.");
+        case 'auth/wrong-password':
+          setError('Incorrect password.');
           break;
-        case "auth/too-many-requests":
-          setError("Too many failed attempts. Please try again later.");
+        case 'auth/too-many-requests':
+          setError('Too many failed attempts. Please try again later.');
           break;
         default:
-          setError("Failed to sign in. Please try again.");
+          setError('Failed to sign in. Please try again.');
       }
       return;
     }
 
-    router.push("/dashboard");
+    router.push('/dashboard');
   };
 
   return (
@@ -60,7 +60,9 @@ export default function LoginForm() {
           id="email"
           type="email"
           value={formData.email}
-          onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
+          onChange={(e) =>
+            setFormData((prev) => ({ ...prev, email: e.target.value }))
+          }
           placeholder="example@mail.com"
           required
           disabled={isLoading}
@@ -72,18 +74,16 @@ export default function LoginForm() {
           id="password"
           type="password"
           value={formData.password}
-          onChange={(e) => setFormData(prev => ({ ...prev, password: e.target.value }))}
+          onChange={(e) =>
+            setFormData((prev) => ({ ...prev, password: e.target.value }))
+          }
           placeholder="Enter your password"
           required
           disabled={isLoading}
         />
       </div>
-      <Button
-        type="submit"
-        className="w-full"
-        disabled={isLoading}
-      >
-        {isLoading ? "Signing in..." : "Sign In"}
+      <Button type="submit" className="w-full" disabled={isLoading}>
+        {isLoading ? 'Signing in...' : 'Sign In'}
       </Button>
     </form>
   );

@@ -1,16 +1,16 @@
-"use client";
+'use client';
 
-import { useState, useEffect } from "react";
-import Form1A from "@/formSteps/Steps/Form1A";
-import Form1B from "@/formSteps/Steps/Form1B";
-import Form2A from "@/formSteps/Steps/Form2A";
-import Form2B from "@/formSteps/Steps/Form2B";
-import Form2C from "@/formSteps/Steps/Form2C";
-import Form2D from "@/formSteps/Steps/Form2D";
-import Form3B from "@/formSteps/Steps/Form3B";
-import FormLoad from "@/formSteps/Common/FormLoad";
-import FormResults from "@/formSteps/Common/FormResults";
-import { processFormData } from "@/service/processFormData";
+import { useState, useEffect } from 'react';
+import Form1A from '@/formSteps/Steps/Form1A';
+import Form1B from '@/formSteps/Steps/Form1B';
+import Form2A from '@/formSteps/Steps/Form2A';
+import Form2B from '@/formSteps/Steps/Form2B';
+import Form2C from '@/formSteps/Steps/Form2C';
+import Form2D from '@/formSteps/Steps/Form2D';
+import Form3B from '@/formSteps/Steps/Form3B';
+import FormLoad from '@/formSteps/Common/FormLoad';
+import FormResults from '@/formSteps/Common/FormResults';
+import { processFormData } from '@/service/processFormData';
 
 export default function FormWrapper() {
   const [currentStep, setCurrentStep] = useState(1);
@@ -28,6 +28,7 @@ export default function FormWrapper() {
         setCurrentStep(9);
       }, 3000);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [scores]);
 
   const nextStep = () => {
@@ -46,7 +47,7 @@ export default function FormWrapper() {
 
   const updateFormData = (newData) => {
     setFormData({ ...formData, ...newData });
-    console.log("updating with", newData);
+    console.log('updating with', newData);
   };
 
   const renderStep = () => {
@@ -110,6 +111,9 @@ export default function FormWrapper() {
     }
   };
 
-  return <div className="h-screen max-w-[100rem] border border-red-500 mx-auto px-4 flex flex-col justify-center items-center">{renderStep()}</div>;
+  return (
+    <div className="h-screen max-w-[100rem] border border-red-500 mx-auto px-4 flex flex-col justify-center items-center">
+      {renderStep()}
+    </div>
+  );
 }
-

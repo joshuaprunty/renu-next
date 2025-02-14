@@ -1,38 +1,38 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label";
-import signUp from "@/firebase/auth/signup";
-import { useRouter } from "next/navigation";
-import { useToast } from "@/hooks/use-toast";
-import { doc, setDoc } from "firebase/firestore";
-import { db } from "@/firebase/config";
+import { useState } from 'react';
+import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
+import { Label } from '@/components/ui/label';
+import signUp from '@/firebase/auth/signup';
+import { useRouter } from 'next/navigation';
+import { useToast } from '@/hooks/use-toast';
+import { doc, setDoc } from 'firebase/firestore';
+import { db } from '@/firebase/config';
 
 export default function SignUpForm() {
   const [formData, setFormData] = useState({
-    email: "",
-    password: "",
-    username: "",
-    firstName: "",
-    lastName: "",
+    email: '',
+    password: '',
+    username: '',
+    firstName: '',
+    lastName: '',
   });
   const router = useRouter();
   const { toast } = useToast();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     try {
       const { result, error } = await signUp(formData.email, formData.password);
-      
+
       if (error) {
         throw new Error(error);
       }
 
       // Create user document in Firestore
-      await setDoc(doc(db, "users", result.user.uid), {
+      await setDoc(doc(db, 'users', result.user.uid), {
         email: formData.email,
         username: formData.username,
         firstName: formData.firstName,
@@ -40,11 +40,11 @@ export default function SignUpForm() {
         createdAt: new Date().toISOString(),
       });
 
-      router.push("/dashboard");
+      router.push('/dashboard');
     } catch (error) {
       toast({
-        variant: "destructive",
-        title: "Error",
+        variant: 'destructive',
+        title: 'Error',
         description: error.message,
       });
     }
@@ -57,7 +57,9 @@ export default function SignUpForm() {
         <Input
           id="username"
           value={formData.username}
-          onChange={(e) => setFormData(prev => ({ ...prev, username: e.target.value }))}
+          onChange={(e) =>
+            setFormData((prev) => ({ ...prev, username: e.target.value }))
+          }
           required
         />
       </div>
@@ -67,7 +69,9 @@ export default function SignUpForm() {
           id="email"
           type="email"
           value={formData.email}
-          onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
+          onChange={(e) =>
+            setFormData((prev) => ({ ...prev, email: e.target.value }))
+          }
           required
         />
       </div>
@@ -77,7 +81,9 @@ export default function SignUpForm() {
           id="password"
           type="password"
           value={formData.password}
-          onChange={(e) => setFormData(prev => ({ ...prev, password: e.target.value }))}
+          onChange={(e) =>
+            setFormData((prev) => ({ ...prev, password: e.target.value }))
+          }
           required
         />
       </div>
@@ -86,7 +92,9 @@ export default function SignUpForm() {
         <Input
           id="firstName"
           value={formData.firstName}
-          onChange={(e) => setFormData(prev => ({ ...prev, firstName: e.target.value }))}
+          onChange={(e) =>
+            setFormData((prev) => ({ ...prev, firstName: e.target.value }))
+          }
         />
       </div>
       <div>
@@ -94,10 +102,14 @@ export default function SignUpForm() {
         <Input
           id="lastName"
           value={formData.lastName}
-          onChange={(e) => setFormData(prev => ({ ...prev, lastName: e.target.value }))}
+          onChange={(e) =>
+            setFormData((prev) => ({ ...prev, lastName: e.target.value }))
+          }
         />
       </div>
-      <Button type="submit" className="w-full">Sign Up</Button>
+      <Button type="submit" className="w-full">
+        Sign Up
+      </Button>
     </form>
   );
 }
