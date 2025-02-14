@@ -1,12 +1,5 @@
-// IMPORTS
-//-------------------------------------------------------------------------------------------------------import React, { useState } from "react";
-import { useState } from "react";
-import React from "react";
 
-// FORM STEP
-//-------------------------------------------------------------------------------------------------------
 function FormResults({ scores }) {
-  // Return Statement ---------------------------------------------------
   return (
     <div className="flex flex-col justify-center items-center w-1/2">
       <div className="w-full flex flex-col justify-center items-center">

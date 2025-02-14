@@ -1,10 +1,7 @@
-// IMPORTS
-//-------------------------------------------------------------------------------------------------------
+
 import React, { useState } from "react";
 import BackNext from "../components/Form/BackNext";
 
-// FORM STEP
-//-------------------------------------------------------------------------------------------------------
 function Form3B({ currDiff, updateFormData, nextStep, backStep }) {
   // Content Variables --------------------------------------------
   const diffs = ["1 (Easy A)", "2", "3 (Average)", "4", "5 (Most Challenging)"];
@@ -14,7 +11,6 @@ function Form3B({ currDiff, updateFormData, nextStep, backStep }) {
 
   const [errorState, setErrorState] = useState(false);
 
-  // Function Declarations ----------------------------------------------
   const handleNextClick = () => {
     if (selectedDiff != 0) {
       updateFormData({ diff: diffs[selectedDiff - 1] });
@@ -34,7 +30,6 @@ function Form3B({ currDiff, updateFormData, nextStep, backStep }) {
     updateFormData({ diff: diffs[diffIndex - 1] });
   }
 
-  // Return Statement ---------------------------------------------------
   return (
     <div className="flex flex-col justify-center items-center w-1/2">
       <div className="w-7/8 d-grid gap-2 position-relative z-2">
@@ -69,5 +64,5 @@ function Form3B({ currDiff, updateFormData, nextStep, backStep }) {
   );
 }
 
-// Export
+
 export default Form3B;

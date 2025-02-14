@@ -1,12 +1,8 @@
-// IMPORTS
-//-------------------------------------------------------------------------------------------------------
+
 import React from "react";
 import BackNext from "../components/Form/BackNext";
 
-// FORM STEP
-//-------------------------------------------------------------------------------------------------------
 function Form3A({ updateFormData, nextStep, backStep }) {
-  // Function Declarations ----------------------------------------------
   const handleNextClick = () => {
     nextStep();
   };
@@ -15,7 +11,6 @@ function Form3A({ updateFormData, nextStep, backStep }) {
     backStep();
   };
 
-  // Return Statement ---------------------------------------------------
   return (
     <>
       <div className="container-fluid position-fixed vh-100 mt-5 mb-0">

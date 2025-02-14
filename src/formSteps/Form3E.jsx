@@ -1,10 +1,7 @@
-// IMPORTS
-//-------------------------------------------------------------------------------------------------------
+
 import React, { useState } from "react";
 import BackNext from "../components/Form/BackNext";
 
-// FORM STEP
-//-------------------------------------------------------------------------------------------------------
 function Form3E({ currTime, updateFormData, nextStep, backStep }) {
   // Content Variables --------------------------------------------
   const times = ["Morning", "Afternoon", "Evening", "No Preference"];
@@ -12,7 +9,6 @@ function Form3E({ currTime, updateFormData, nextStep, backStep }) {
   // UseState Variables -------------------------------------------------
   const [selectedTime, setSelectedTime] = useState(times.indexOf(currTime));
 
-  // Function Declarations ----------------------------------------------
   const handleNextClick = () => {
     if (selectedTime != -1) {
       updateFormData({ time: times[selectedTime - 1] });
@@ -31,7 +27,6 @@ function Form3E({ currTime, updateFormData, nextStep, backStep }) {
     setSelectedTime(timeIndex);
   }
 
-  // Return Statement ---------------------------------------------------
   return (
     <div className="container-fluid position-fixed vh-100 mt-5 mb-0">
       <div className="flex flex-col justify-center items-center w-1/2 bg-white h-100">
@@ -75,5 +70,5 @@ function Form3E({ currTime, updateFormData, nextStep, backStep }) {
     </div>
   );
 }
-// Export
+
 export default Form3E;

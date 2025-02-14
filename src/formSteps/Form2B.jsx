@@ -1,11 +1,8 @@
-// IMPORTS
-//-------------------------------------------------------------------------------------------------------
+
 import React, { useState } from "react";
 import BackNext from "../components/Form/BackNext";
 import { schools } from "../data/util";
 
-// FORM STEP
-//-------------------------------------------------------------------------------------------------------
 function Form2B({ currSchool, updateFormData, nextStep, backStep }) {
   // UseState Variables -------------------------------------------------
   const [selectedSchool, setSelectedSchool] = useState(
@@ -14,7 +11,6 @@ function Form2B({ currSchool, updateFormData, nextStep, backStep }) {
 
   const [errorState, setErrorState] = useState(false);
 
-  // Function Declarations ----------------------------------------------
   function handleSchoolClick(schoolIndex) {
     setSelectedSchool(schoolIndex);
     setErrorState(false);
@@ -35,7 +31,6 @@ function Form2B({ currSchool, updateFormData, nextStep, backStep }) {
     backStep();
   };
 
-  // Return Statement ---------------------------------------------------
   return (
     <>
       <div className="flex flex-col justify-center items-center w-1/2">
@@ -73,5 +68,5 @@ function Form2B({ currSchool, updateFormData, nextStep, backStep }) {
   );
 }
 
-// Export
+
 export default Form2B;

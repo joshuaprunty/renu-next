@@ -1,16 +1,12 @@
-// IMPORTS
-//-------------------------------------------------------------------------------------------------------
+
 import React, { useState } from "react";
 import BackNext from "../components/Form/BackNext";
 import { years } from "../data/util";
 
-// FORM STEP
-//-------------------------------------------------------------------------------------------------------
 function Form2A({ currYear, updateFormData, nextStep, backStep }) {
   // UseState Variables -------------------------------------------------
   const [selectedYear, setSelectedYear] = useState(years.indexOf(currYear) + 1);
   const [errorState, setErrorState] = useState(false);
-  // Function Declarations ----------------------------------------------
   const handleYearClick = (yearIndex) => {
     setSelectedYear(yearIndex);
   };
@@ -28,7 +24,6 @@ function Form2A({ currYear, updateFormData, nextStep, backStep }) {
     backStep();
   };
 
-  // Return Statement ---------------------------------------------------
   return (
     <>
       <div className="flex flex-col justify-center items-center w-1/2">
@@ -66,5 +61,5 @@ function Form2A({ currYear, updateFormData, nextStep, backStep }) {
   );
 }
 
-// Export
+
 export default Form2A;

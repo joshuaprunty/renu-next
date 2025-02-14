@@ -1,10 +1,7 @@
-// IMPORTS
-//-------------------------------------------------------------------------------------------------------
+
 import React, { useState } from "react";
 import BackNext from "../components/Form/BackNext";
 
-// FORM STEP
-//-------------------------------------------------------------------------------------------------------
 function Form2D({ currFulfill, updateFormData, nextStep, backStep }) {
   // Content Variables --------------------------------------------
   const fulfills = ["Distribution", "Major/Minor", "Elective"];
@@ -16,7 +13,6 @@ function Form2D({ currFulfill, updateFormData, nextStep, backStep }) {
 
   const [errorState, setErrorState] = useState(false);
 
-  // Function Declarations ----------------------------------------------
   function handleFulfillsClick(fulfillIndex) {
     setSelectedFulfills(fulfillIndex);
     setErrorState(false);
@@ -37,7 +33,6 @@ function Form2D({ currFulfill, updateFormData, nextStep, backStep }) {
     backStep();
   };
 
-  // Return Statement ---------------------------------------------------
   return (
     <div className="flex flex-col justify-center items-center w-1/2">
       <div className="w-7/8 d-grid gap-2 position-relative z-2">
@@ -73,5 +68,5 @@ function Form2D({ currFulfill, updateFormData, nextStep, backStep }) {
   );
 }
 
-// Export
+
 export default Form2D;

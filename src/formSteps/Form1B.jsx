@@ -1,12 +1,8 @@
-// IMPORTS
-//-------------------------------------------------------------------------------------------------------
+
 import React from "react";
 import BackNext from "../components/Form/BackNext";
 
-// FORM STEP
-//-------------------------------------------------------------------------------------------------------
 function Form1B({ nextStep, backStep }) {
-  // Function Declarations ----------------------------------------------
   const handleNextClick = () => {
     nextStep();
   };
@@ -15,7 +11,6 @@ function Form1B({ nextStep, backStep }) {
     backStep();
   };
 
-  // Return Statement ---------------------------------------------------
   return (
     <div className="flex flex-col justify-center items-center w-1/2">
       <div className="w-7/8 d-grid gap-2 position-relative z-2">
@@ -34,5 +29,5 @@ function Form1B({ nextStep, backStep }) {
   );
 }
 
-// Export
+
 export default Form1B;

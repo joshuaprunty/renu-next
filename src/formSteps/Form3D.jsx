@@ -1,10 +1,7 @@
-// IMPORTS
-//-------------------------------------------------------------------------------------------------------
+
 import React, { useState } from "react";
 import BackNext from "../components/Form/BackNext";
 
-// FORM STEP
-//-------------------------------------------------------------------------------------------------------
 function Form3D({ currDay, updateFormData, nextStep, backStep }) {
   // Content Variables --------------------------------------------
   const days = [
@@ -14,7 +11,6 @@ function Form3D({ currDay, updateFormData, nextStep, backStep }) {
   ];
   const [selectedDay, setSelectedDay] = useState(days.indexOf(currDay));
 
-  // Function Declarations ----------------------------------------------
   function handleDayClick(dayIndex) {
     setSelectedDay(dayIndex);
   }
@@ -33,7 +29,6 @@ function Form3D({ currDay, updateFormData, nextStep, backStep }) {
     backStep();
   };
 
-  // Return Statement ---------------------------------------------------
   return (
     <div className="container-fluid position-fixed vh-100 mt-5 mb-0">
       <div className="flex flex-col justify-center items-center w-1/2 bg-white h-100">
@@ -78,5 +73,5 @@ function Form3D({ currDay, updateFormData, nextStep, backStep }) {
   );
 }
 
-// Export
+
 export default Form3D;

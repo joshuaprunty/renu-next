@@ -1,10 +1,7 @@
-// IMPORTS
-//-------------------------------------------------------------------------------------------------------
+
 import React, { useState } from "react";
 import BackNext from "../components/Form/BackNext";
 
-// FORM STEP
-//-------------------------------------------------------------------------------------------------------
 function Form3C({ currLoc, updateFormData, nextStep, backStep }) {
   // Content Variables --------------------------------------------
   const locs = [
@@ -19,7 +16,6 @@ function Form3C({ currLoc, updateFormData, nextStep, backStep }) {
 
   const [errorState, setErrorState] = useState(false);
 
-  // Function Declarations ----------------------------------------------
   function handleLocClick(locIndex) {
     setSelectedLoc(locIndex);
   }
@@ -37,7 +33,6 @@ function Form3C({ currLoc, updateFormData, nextStep, backStep }) {
     backStep();
   };
 
-  // Return Statement ---------------------------------------------------
   return (
     <div className="container-fluid position-fixed vh-100 mt-5 mb-0">
       <div className="flex flex-col justify-center items-center w-1/2 bg-white h-100">
@@ -82,5 +77,5 @@ function Form3C({ currLoc, updateFormData, nextStep, backStep }) {
   );
 }
 
-// Export
+
 export default Form3C;

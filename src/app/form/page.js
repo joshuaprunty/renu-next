@@ -110,6 +110,6 @@ export default function FormWrapper() {
     }
   };
 
-  return <div className="vh-100 container-lg flex flex-col justify-center items-center">{renderStep()}</div>;
+  return <div className="h-screen max-w-7xl mx-auto px-4 flex flex-col justify-center items-center">{renderStep()}</div>;
 }
 

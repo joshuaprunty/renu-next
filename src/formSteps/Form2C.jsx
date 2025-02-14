@@ -1,4 +1,4 @@
-// IMPORTS
+
 //-------------------------------------------------------------------------------------------------------import React, { useState } from "react";
 import { useState } from "react";
 import BackNext from "../components/Form/BackNext";
@@ -8,8 +8,6 @@ import majors from "../data/majors.json";
 import { fullSchools } from "../data/util";
 
 
-// FORM STEP
-//-------------------------------------------------------------------------------------------------------
 function Form2C({
   currSchool,
   currMajors,
@@ -66,7 +64,6 @@ function Form2C({
     );
   };
 
-  // Return Statement ---------------------------------------------------
   return (
     <div className="flex flex-col justify-start items-center h-[35%] w-full max-w-[700px]">
       <div className="w-7/8 d-grid gap-2 position-relative z-2">
@@ -115,5 +112,5 @@ function Form2C({
   );
 }
 
-// Export
+
 export default Form2C;

@@ -1,10 +1,6 @@
-// IMPORTS
-//-------------------------------------------------------------------------------------------------------
-import React, { useState } from "react";
+import { useState } from "react";
 import BackNext from "../components/Form/BackNext";
 
-// FORM STEP
-//-------------------------------------------------------------------------------------------------------
 function FormSelectStep({
   heading,
   options,
@@ -14,21 +10,17 @@ function FormSelectStep({
   backStep,
   datakey,
 }) {
-  // Content Variables --------------------------------------------
 
-  // UseState Variables -------------------------------------------------
   const [selectedOption, setselectedOption] = useState(
     options.indexOf(currSelection) + 1
   );
 
   const [errorState, setErrorState] = useState(false);
 
-  // Function Declarations ----------------------------------------------
   const handleOptionClick = (optionindex) => {
     setselectedOption(optionindex);
   };
 
-  // Next
   const handleNextClick = () => {
     if (selectedOption != 0) {
       updateFormData({ [datakey]: options[selectedOption - 1] });
@@ -38,12 +30,10 @@ function FormSelectStep({
     }
   };
 
-  // Back
   const handleBackClick = () => {
     backStep();
   };
 
-  // Return Statement ---------------------------------------------------
   return (
     <>
       <div className="flex flex-col justify-center items-center w-1/2">
@@ -82,5 +72,5 @@ function FormSelectStep({
   );
 }
 
-// Export
+
 export default FormSelectStep;
