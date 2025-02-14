@@ -1,4 +1,3 @@
-import "@/styles/Home.css";
 
 export default function Footer() {
   return (

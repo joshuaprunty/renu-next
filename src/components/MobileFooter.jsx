@@ -1,4 +1,3 @@
-import "@/styles/Home.css";
 
 export default function MobileFooter() {
   return (

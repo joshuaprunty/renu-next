@@ -1,4 +1,3 @@
-import "@/styles/Home.css";
 
 export default function Secondary() {
   const cardData = [

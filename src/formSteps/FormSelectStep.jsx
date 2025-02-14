@@ -2,8 +2,6 @@
 //-------------------------------------------------------------------------------------------------------
 import React, { useState } from "react";
 import BackNext from "../components/Form/BackNext";
-import "../styles/Form.css";
-import "../styles/Home.css";
 
 // FORM STEP
 //-------------------------------------------------------------------------------------------------------
@@ -48,8 +46,8 @@ function FormSelectStep({
   // Return Statement ---------------------------------------------------
   return (
     <>
-      <div class="form-div-main">
-        <div className="form-content d-grid gap-2 position-relative z-2">
+      <div className="flex flex-col justify-center items-center w-1/2">
+        <div className="w-7/8 d-grid gap-2 position-relative z-2">
           <h2>{heading}</h2>
           {options.map((option, index) => (
             <button

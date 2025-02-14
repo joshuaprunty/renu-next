@@ -1,11 +1,10 @@
-import "@/styles/Home.css";
 
 export default function Hero() {
   return (
     <>
       <div className="hero-top-spacer w-full bg-dark"></div>
-      <div className="hero-div">
-        <div className="hero-div container mx-auto px-4">
+      <div className="flex justify-center items-center bg-cover bg-center relative py-20 max-h-[850px] bg-[url('/Deering.jpg')]">
+        <div className="container mx-auto px-4">
           <div className="flex items-center flex-wrap">
             <div className="w-full md:w-1/2 text-white text-center mx-auto">
               <h1 className="text-5xl font-light mb-4">

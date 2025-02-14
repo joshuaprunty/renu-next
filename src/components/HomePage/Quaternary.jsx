@@ -1,10 +1,12 @@
-import "@/styles/Home.css";
 
 export default function Quaternary() {
   return (
-    <div className="quaternary-div" id="quaternary-div">
+    <div className="bg-[#443161] h-[65vh] min-h-[350px] flex justify-center overflow-hidden relative" id="quaternary-div">
       <div className="container mx-auto flex flex-col justify-center">
-        <img className="quat-background-img" src="/NorthwesternN.png" />
+        <img 
+          className="block h-[300%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0" 
+          src="/NorthwesternN.png" 
+        />
         <div className="relative z-10 w-full">
           <div className="flex h-full items-center">
             <div className="w-1/6"></div>

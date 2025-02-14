@@ -1,8 +1,6 @@
 // IMPORTS
 //-------------------------------------------------------------------------------------------------------
 import React, { useState } from "react";
-import "../styles/Form.css";
-import "../styles/Home.css";
 import BackNext from "../components/Form/BackNext";
 import { schools } from "../data/util";
 
@@ -40,8 +38,8 @@ function Form2B({ currSchool, updateFormData, nextStep, backStep }) {
   // Return Statement ---------------------------------------------------
   return (
     <>
-      <div class="form-div-main">
-        <div className="form-content d-grid gap-2 position-relative z-2">
+      <div className="flex flex-col justify-center items-center w-1/2">
+        <div className="w-7/8 d-grid gap-2 position-relative z-2">
           <h2>Your School/College:</h2>
           {schools.map((school, index) => (
             <button

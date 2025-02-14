@@ -1,7 +1,6 @@
 // IMPORTS
 //-------------------------------------------------------------------------------------------------------
 import React from "react";
-import "../styles/Home.css";
 
 // FORM STEP
 //-------------------------------------------------------------------------------------------------------
@@ -13,8 +12,8 @@ function Form1A({ nextStep }) {
 
   // Return Statement ---------------------------------------------------
   return (
-    <div class="form-div-main">
-      <div className="form-content d-grid gap-2">
+    <div className="flex flex-col justify-center items-center w-1/2">
+      <div className="w-7/8 d-grid gap-2">
         <h1>Find your next course in under 5 minutes.</h1>
         <p>
           Tell us about what you're looking for in upcoming classes, which
@@ -34,3 +33,5 @@ function Form1A({ nextStep }) {
 
 // Export
 export default Form1A;
+
+

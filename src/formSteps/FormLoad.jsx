@@ -1,8 +1,6 @@
 // IMPORTS
 //-------------------------------------------------------------------------------------------------------import React, { useState } from "react";
 import { useState, useEffect } from "react";
-import "../styles/Home.css";
-import "../styles/Form.css";
 import React from "react";
 import "ldrs/ripples";
 
@@ -11,7 +9,7 @@ import "ldrs/ripples";
 function FormLoad() {
   // Return Statement ---------------------------------------------------
   return (
-    <div className="form-div-main">
+    <div className="flex flex-col justify-center items-center w-1/2">
       <div className="load-content">
         <l-ripples
           size="90"

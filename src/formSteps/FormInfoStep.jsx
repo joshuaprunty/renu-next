@@ -3,8 +3,6 @@
 import React from "react";
 import BackNext from "../components/Form/BackNext";
 
-import "../styles/Home.css";
-import "../styles/Form.css";
 
 // FORM STEP
 //-------------------------------------------------------------------------------------------------------
@@ -20,8 +18,8 @@ function FormInfoStep({ nextStep, backStep, heading, subheading }) {
 
   // Return Statement ---------------------------------------------------
   return (
-    <div class="form-div-main">
-      <div className="form-content d-grid gap-2 position-relative z-2">
+    <div className="flex flex-col justify-center items-center w-1/2">
+      <div className="w-7/8 d-grid gap-2 position-relative z-2">
         <h1 className="text-center">{heading}</h1>
         <p className="text-center">{subheading}</p>
         <BackNext

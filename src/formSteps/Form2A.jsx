@@ -3,8 +3,6 @@
 import React, { useState } from "react";
 import BackNext from "../components/Form/BackNext";
 import { years } from "../data/util";
-import "../styles/Form.css";
-import "../styles/Home.css";
 
 // FORM STEP
 //-------------------------------------------------------------------------------------------------------
@@ -33,8 +31,8 @@ function Form2A({ currYear, updateFormData, nextStep, backStep }) {
   // Return Statement ---------------------------------------------------
   return (
     <>
-      <div class="form-div-main">
-        <div className="form-content d-grid gap-2 position-relative z-2">
+      <div className="flex flex-col justify-center items-center w-1/2">
+        <div className="w-7/8 d-grid gap-2 position-relative z-2">
           <h2>Your class at NU (Current or Incoming):</h2>
           {years.map((year, index) => (
             <button

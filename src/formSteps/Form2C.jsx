@@ -7,8 +7,6 @@ import Select from "react-select";
 import majors from "../data/majors.json";
 import { fullSchools } from "../data/util";
 
-import "../styles/Home.css";
-import "../styles/Form.css";
 
 // FORM STEP
 //-------------------------------------------------------------------------------------------------------
@@ -70,8 +68,8 @@ function Form2C({
 
   // Return Statement ---------------------------------------------------
   return (
-    <div className="form-div-major w-100 w-md-50">
-      <div className="form-content d-grid gap-2 position-relative z-2">
+    <div className="flex flex-col justify-start items-center h-[35%] w-full max-w-[700px]">
+      <div className="w-7/8 d-grid gap-2 position-relative z-2">
         <h2>Add your current/intended majors.</h2>
         <h5>Majors for {fullSchools[currSchool]} </h5>
         <Select

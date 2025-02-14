@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useEffect } from "react";
 import Form1A from "@/formSteps/Form1A";
 import Form1B from "@/formSteps/Form1B";
@@ -9,7 +11,6 @@ import Form3B from "@/formSteps/Form3B";
 import FormLoad from "@/formSteps/FormLoad";
 import FormResults from "@/formSteps/FormResults";
 import { processFormData } from "@/processFormData";
-import "@/styles/Home.css";
 
 export default function FormWrapper() {
   const [currentStep, setCurrentStep] = useState(1);

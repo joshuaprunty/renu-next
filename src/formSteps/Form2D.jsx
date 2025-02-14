@@ -2,8 +2,6 @@
 //-------------------------------------------------------------------------------------------------------
 import React, { useState } from "react";
 import BackNext from "../components/Form/BackNext";
-import "../styles/Home.css";
-import "../styles/Form.css";
 
 // FORM STEP
 //-------------------------------------------------------------------------------------------------------
@@ -41,8 +39,8 @@ function Form2D({ currFulfill, updateFormData, nextStep, backStep }) {
 
   // Return Statement ---------------------------------------------------
   return (
-    <div className="form-div-main">
-      <div className="form-content d-grid gap-2 position-relative z-2">
+    <div className="flex flex-col justify-center items-center w-1/2">
+      <div className="w-7/8 d-grid gap-2 position-relative z-2">
         <h2>What requirement(s) are you looking to fulfill?</h2>
         {fulfills.map((fulfill, index) => (
           <button
