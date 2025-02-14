@@ -12,8 +12,8 @@ export default function Home() {
       <Secondary />
       <Ternary />
       <Quaternary />
-      <MobileFooter className="mftr" />
-      <Footer className="ftr" />
+      <MobileFooter />
+      <Footer />
     </>
   );
 }

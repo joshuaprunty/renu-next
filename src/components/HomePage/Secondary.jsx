@@ -18,17 +18,17 @@ export default function Secondary() {
 
   return (
     <>
-      <div className="bg-white flex justify-center items-center py-[6rem]" id="secondary-div">
-        <div className="container-lg">
+      <div className="bg-white flex justify-center items-center py-24" id="secondary-div">
+        <div className="container mx-auto px-4">
           <p className="text-5xl text-center">How Renu Works</p>
-          <hr className="w-2/3 mx-auto mt-0 mb-[20px] text-black" />
-          <div className="row justify-content-center text-center px-2">
+          <hr className="w-2/3 mx-auto mt-0 mb-5 text-black" />
+          <div className="flex flex-wrap justify-center text-center px-2">
             {cardData.map((data, index) => (
-              <div key={index} className="col-11 col-md-4 my-3 my-md-2">
-                <div className="card h-100 py-3 px-lg-3">
-                  <div className="card-body">
-                    <h5 className="fs-4 h-[3.5em] font-weight-400 mb-4">{data.title}</h5>
-                    <p className="fs-4 h-[50%] fw-light mb-md-5">
+              <div key={index} className="w-11/12 md:w-1/3 my-3 md:my-2">
+                <div className="h-full py-3 px-lg-3 border rounded-lg shadow">
+                  <div className="p-4">
+                    <h5 className="text-2xl h-[3.5em] font-normal mb-4">{data.title}</h5>
+                    <p className="text-2xl h-[50%] font-light mb-0 md:mb-5">
                       {data.text}
                     </p>
                   </div>

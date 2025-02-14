@@ -2,37 +2,37 @@ import "@/styles/Home.css";
 
 export default function MobileFooter() {
   return (
-    <div className="p-[20px] text-base bg-body-tertiary lg:hidden">
-      <div className="container-lg">
-        <div className="row justify-content-start justify-content-md-center">
-          <div className="d-flex justify-content-start flex-row">
-            <div className="col-md-3 me-5 justify-content-center">
-              <div className="ms-auto">
+    <div className="p-[20px] text-base bg-gray-100 lg:hidden">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col items-center">
+          <div className="flex flex-row justify-start">
+            <div className="mr-5">
+              <div className="ml-auto">
                 <ul className="list-none">
                   <li className="font-extrabold">Renu</li>
-                  <li className="fw-light">v0.0.1</li>
-                  <li className="fw-light">
+                  <li className="font-light">v0.0.1</li>
+                  <li className="font-light">
                     Created by <br />
                     Joshua Prunty
                   </li>
                 </ul>
               </div>
             </div>
-            <div className="col-md-3 justify-content-center">
-              <div className="ms-auto">
+            <div>
+              <div className="ml-auto">
                 <ul className="list-none">
                   <li className="font-extrabold">Links</li>
-                  <li className="fw-light">
+                  <li className="font-light">
                     <a className="footer-link" href="/">
                       Home
                     </a>
                   </li>
-                  <li className="fw-light">
+                  <li className="font-light">
                     <a className="footer-link" href="#secondary-div">
                       About
                     </a>
                   </li>
-                  <li className="fw-light">
+                  <li className="font-light">
                     <a className="footer-link" href="#ternary-div">
                       Assessment
                     </a>
@@ -42,17 +42,17 @@ export default function MobileFooter() {
             </div>
           </div>
           <hr />
-          <div className="col-md-3 justify-content-center">
-            <div className="ms-auto">
+          <div>
+            <div className="ml-auto">
               <ul className="list-none">
-                <li className="fw-light">© Joshua Prunty, 2023</li>
-                <div className="d-flex flex-row justify-content-start">
-                  <li className="fw-light me-3">
+                <li className="font-light">© Joshua Prunty, 2023</li>
+                <div className="flex flex-row justify-start">
+                  <li className="font-light mr-3">
                     <a className="footer-link" href="">
                       Contact
                     </a>
                   </li>
-                  <li className="fw-light">
+                  <li className="font-light">
                     <a className="footer-link" href="">
                       Privacy
                     </a>
