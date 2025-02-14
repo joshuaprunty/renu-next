@@ -1,6 +1,6 @@
 import { useState } from "react";
 import BackNext from "@/components/Form/BackNext";
-
+import { Button } from "@/components/ui/button";
 export default function Form3B({ currDiff, updateFormData, nextStep, backStep }) {
   const diffs = ["1 (Easy A)", "2", "3 (Average)", "4", "5 (Most Challenging)"];
   const [selectedDiff, setSelectedDiff] = useState(diffs.indexOf(currDiff) + 1);
@@ -30,9 +30,9 @@ export default function Form3B({ currDiff, updateFormData, nextStep, backStep })
       <div className="w-7/8 grid gap-2 relative z-2">
         <h2>How challenging of a course are you looking for?</h2>
         {diffs.map((diff, index) => (
-          <button
+          <Button
             key={index}
-            className="flex items-center py-3 border outline-none hover:bg-gray-100"
+            className="flex items-center justify-start py-3 border outline-none hover:bg-gray-100"
             onClick={() => handleDiffClick(index + 1)}
           >
             <div
@@ -43,7 +43,7 @@ export default function Form3B({ currDiff, updateFormData, nextStep, backStep })
             <span className="text-left ml-3 text-xl">
               {diff}
             </span>
-          </button>
+          </Button>
         ))}
         <BackNext
           handleBackClick={handleBackClick}

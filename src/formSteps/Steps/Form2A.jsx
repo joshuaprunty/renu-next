@@ -1,6 +1,7 @@
 import { useState } from "react";
 import BackNext from "@/components/Form/BackNext";
 import { years } from "@/lib/constants";
+import { Button } from "@/components/ui/button";
 
 export default function Form2A({ currYear, updateFormData, nextStep, backStep }) {
   const [selectedYear, setSelectedYear] = useState(years.indexOf(currYear) + 1);
@@ -26,9 +27,9 @@ export default function Form2A({ currYear, updateFormData, nextStep, backStep })
         <div className="w-7/8 grid gap-2 relative z-2">
           <h2>Your class at NU (Current or Incoming):</h2>
           {years.map((year, index) => (
-            <button
+            <Button
               key={index}
-              className={`flex items-center py-3 border outline-none ${
+              className={`flex items-center justify-start py-3 border outline-none ${
                 selectedYear === index + 1 ? "border-gray-500" : "border-gray-200"
               }`}
               onClick={() => handleYearClick(index + 1)}
@@ -39,7 +40,7 @@ export default function Form2A({ currYear, updateFormData, nextStep, backStep })
                 }`}
               ></div>
               <span className="ml-3 lg:ml-5 text-xl">{year}</span>
-            </button>
+            </Button>
           ))}
           <BackNext
             handleBackClick={handleBackClick}

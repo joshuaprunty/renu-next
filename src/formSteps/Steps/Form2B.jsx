@@ -1,7 +1,7 @@
 import { useState } from "react";
 import BackNext from "@/components/Form/BackNext";
 import { schools } from "@/lib/constants";
-
+import { Button } from "@/components/ui/button";
 export default function Form2B({ currSchool, updateFormData, nextStep, backStep }) {
   const [selectedSchool, setSelectedSchool] = useState(
     schools.indexOf(currSchool) + 1
@@ -35,9 +35,9 @@ export default function Form2B({ currSchool, updateFormData, nextStep, backStep 
         <div className="w-7/8 grid gap-2 relative z-2">
           <h2>Your School/College:</h2>
           {schools.map((school, index) => (
-            <button
+            <Button
               key={index}
-              className={`flex items-center py-3 border outline-none ${
+              className={`flex items-center justify-start py-3 border outline-none ${
                 selectedSchool === index + 1 ? "border-gray-500" : "border-gray-200"
               }`}
               onClick={() => handleSchoolClick(index + 1)}
@@ -50,7 +50,7 @@ export default function Form2B({ currSchool, updateFormData, nextStep, backStep 
               <span className="ml-3 lg:ml-5 text-xl">
                 {school}
               </span>
-            </button>
+            </Button>
           ))}
           <BackNext
             handleBackClick={handleBackClick}

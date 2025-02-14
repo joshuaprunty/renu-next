@@ -1,6 +1,6 @@
 import { useState } from "react";
 import BackNext from "@/components/Form/BackNext";
-
+import { Button } from "@/components/ui/button";
 export default function Form2D({ currFulfill, updateFormData, nextStep, backStep }) {
   const fulfills = ["Distribution", "Major/Minor", "Elective"];
 
@@ -35,9 +35,9 @@ export default function Form2D({ currFulfill, updateFormData, nextStep, backStep
       <div className="w-7/8 grid gap-2 relative z-2">
         <h2>What requirement(s) are you looking to fulfill?</h2>
         {fulfills.map((fulfill, index) => (
-          <button
+          <Button
             key={index}
-            className={`flex items-center py-3 border outline-none ${
+            className={`flex items-center justify-start py-3 border outline-none ${
               selectedFulfills === index + 1 ? "border-gray-500" : "border-gray-200"
             }`}
             onClick={() => handleFulfillsClick(index + 1)}
@@ -50,7 +50,7 @@ export default function Form2D({ currFulfill, updateFormData, nextStep, backStep
             <span className="text-start ml-3 lg:ml-5 text-xl">
               {fulfill}
             </span>
-          </button>
+          </Button>
         ))}
         <BackNext
           handleBackClick={handleBackClick}

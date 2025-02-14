@@ -1,6 +1,6 @@
 import { useState } from "react";
 import BackNext from "@/components/Form/BackNext";
-
+import { Button } from "@/components/ui/button";
 export default function Form3D({ currDay, updateFormData, nextStep, backStep }) {
   const days = [
     "Monday / Wednesday / Friday",
@@ -37,9 +37,9 @@ export default function Form3D({ currDay, updateFormData, nextStep, backStep }) 
         <div className="w-7/8 grid gap-2 relative z-10">
           <h2>I am looking for a course that meets on:</h2>
           {days.map((day, index) => (
-            <button
+            <Button
               key={index}
-              className="flex items-center py-3 border outline-none hover:bg-gray-100"
+              className="flex items-center justify-start py-3 border outline-none hover:bg-gray-100"
               onClick={() => handleDayClick(index + 1)}
             >
               <div
@@ -50,7 +50,7 @@ export default function Form3D({ currDay, updateFormData, nextStep, backStep }) 
               <span className="ml-3 text-left text-xl">
                 {day}
               </span>
-            </button>
+            </Button>
           ))}
           <BackNext
             handleBackClick={handleBackClick}

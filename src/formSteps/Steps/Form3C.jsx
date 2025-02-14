@@ -1,6 +1,6 @@
 import { useState } from "react";
 import BackNext from "@/components/Form/BackNext";
-
+import { Button } from "@/components/ui/button";
 export default function Form3C({ currLoc, updateFormData, nextStep, backStep }) {
   const locs = [
     "North Campus",
@@ -38,9 +38,9 @@ export default function Form3C({ currLoc, updateFormData, nextStep, backStep }) 
         <div className="w-7/8 grid gap-2 relative z-10">
           <h2>I am looking for a course that is located on/near:</h2>
           {locs.map((loc, index) => (
-            <button
+            <Button
               key={index}
-              className="flex items-center py-3 border outline-none hover:bg-gray-100"
+              className="flex items-center justify-start py-3 border outline-none hover:bg-gray-100"
               onClick={() => handleLocClick(index + 1)}
             >
               <div
@@ -51,7 +51,7 @@ export default function Form3C({ currLoc, updateFormData, nextStep, backStep }) 
               <span className="ml-3 text-left text-xl">
                 {loc}
               </span>
-            </button>
+            </Button>
           ))}
           <BackNext
             handleBackClick={handleBackClick}

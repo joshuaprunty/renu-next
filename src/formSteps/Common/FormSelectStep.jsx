@@ -1,5 +1,6 @@
 import { useState } from "react";
 import BackNext from "@/components/Form/BackNext";
+import { Button } from "@/components/ui/button";
 
 export default function FormSelectStep({
   heading,
@@ -39,9 +40,9 @@ export default function FormSelectStep({
         <div className="w-7/8 grid gap-2 relative z-2">
           <h2>{heading}</h2>
           {options.map((option, index) => (
-            <button
+            <Button
               key={index}
-              className={`flex items-center py-3 border ${
+              className={`flex items-center justify-start py-3 border ${
                 selectedOption === index + 1 ? "border-gray-500" : "border-gray-200"
               }`}
               onClick={() => handleOptionClick(index + 1)}
@@ -54,7 +55,7 @@ export default function FormSelectStep({
               <span className="ml-3 text-left text-xl">
                 {option}
               </span>
-            </button>
+            </Button>
           ))}
           <BackNext
             handleBackClick={handleBackClick}

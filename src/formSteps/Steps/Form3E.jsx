@@ -1,6 +1,6 @@
 import { useState } from "react";
 import BackNext from "@/components/Form/BackNext";
-
+import { Button } from "@/components/ui/button";
 export default function Form3E({ currTime, updateFormData, nextStep, backStep }) {
   const times = ["Morning", "Afternoon", "Evening", "No Preference"];
   const [selectedTime, setSelectedTime] = useState(times.indexOf(currTime));
@@ -33,9 +33,9 @@ export default function Form3E({ currTime, updateFormData, nextStep, backStep })
         <div className="w-7/8 grid gap-2 relative z-10">
           <h2>I am looking for a course that meets in the:</h2>
           {times.map((time, index) => (
-            <button
+            <Button
               key={index}
-              className="flex items-center py-3 border outline-none hover:bg-gray-100"
+              className="flex items-center justify-start py-3 border outline-none hover:bg-gray-100"
               onClick={() => handleTimeClick(index + 1)}
             >
               <div
@@ -46,7 +46,7 @@ export default function Form3E({ currTime, updateFormData, nextStep, backStep })
               <span className="ml-3 text-left text-xl">
                 {time}
               </span>
-            </button>
+            </Button>
           ))}
           <BackNext
             handleBackClick={handleBackClick}
