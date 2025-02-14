@@ -2,10 +2,10 @@
 export default function Footer() {
   return (
     <div className="p-[20px] text-base bg-gray-100">
-      <div className="mx-auto px-4 max-w-[100rem] border border-red-500">
+      <div className="mx-auto px-4 max-w-[100rem]">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="flex justify-center">
-            <div className="border border-blue-500">
+            <div className="">
               <ul className="list-none">
                 <li className="font-extrabold">Renu</li>
                 <li className="font-light">v0.0.1</li>
@@ -17,7 +17,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex justify-center">
-            <div className="border border-blue-500">
+            <div className="">
               <ul className="list-none">
                 <li className="font-extrabold">Links</li>
                 <li className="font-light">
@@ -39,7 +39,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex justify-center">
-            <div className="border border-blue-500">
+            <div className="">
               <ul className="list-none">
                 <li className="font-extrabold">Pages</li>
                 <li className="font-light">
@@ -56,7 +56,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex justify-center">
-            <div className="border border-blue-500">
+            <div className="">
               <ul className="list-none">
                 <li className="font-light">© Joshua Prunty, 2023</li>
                 <li className="font-light">
