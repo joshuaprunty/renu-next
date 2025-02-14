@@ -9,7 +9,7 @@ export default function Navbar() {
     { href: "/form", label: "Get Started" },
     { href: "/about", label: "About" },
     {
-      href: "https://github.com",
+      href: "https://github.com/joshuaprunty/renu-next",
       label: "GitHub",
       icon: {
         src: "/github.svg",
