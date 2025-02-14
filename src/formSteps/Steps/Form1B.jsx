@@ -1,4 +1,6 @@
 import BackNext from "@/components/Form/BackNext";
+import { Button, KIND, SHAPE } from "baseui/button";
+
 
 export default function Form1B({ nextStep, backStep }) {
   const handleNextClick = () => {
@@ -10,9 +12,9 @@ export default function Form1B({ nextStep, backStep }) {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center w-1/2">
-      <p className="text-center text-4xl font-medium my-6">Basic Info</p>
-      <p className="text-center my-6">
+    <div className="flex flex-col justify-center items-center space-y-4">
+      <p className="text-center text-4xl font-medium">Basic Info</p>
+      <p className="text-center text-xl font-light">
         This section will ask you basic info about your academic status at
         Northwestern to help determine courses that fit you.
       </p>
@@ -24,3 +26,4 @@ export default function Form1B({ nextStep, backStep }) {
     </div>
   );
 }
+

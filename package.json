@@ -17,6 +17,7 @@
     "@radix-ui/react-navigation-menu": "^1.2.5",
     "@radix-ui/react-slot": "^1.1.2",
     "@react-oauth/google": "^0.12.1",
+    "baseui": "^0.0.0-next-2113e1821",
     "bootstrap": "^5.3.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -28,6 +29,8 @@
     "react-dom": "^19.0.0",
     "react-router-dom": "^6.11.2",
     "react-select": "^5.8.0",
+    "styletron-engine-monolithic": "^1.0.0",
+    "styletron-react": "^6.1.1",
     "tailwind-merge": "^3.0.1",
     "tailwindcss-animate": "^1.0.7",
     "validator": "^13.9.0"

@@ -1,21 +1,36 @@
-
-import { Button } from "@/components/ui/button";
+import { Button, KIND, SHAPE } from "baseui/button";
 
 export default function BackNext({ handleBackClick, handleNextClick, is_centered }) {
   return (
-    <div className="row">
+    <div className="flex">
       {is_centered ? (
-        <div className="col-12 d-flex justify-content-center my-3">
+        <div className="w-full flex justify-center my-3 space-x-6">
           <Button
             onClick={handleBackClick}
-            className="mx-2 px-5"
+            kind={KIND.secondary}
+            overrides={{
+              BaseButton: {
+                style: {
+                  paddingLeft: '6rem',
+                  paddingRight: '6rem',
+                }
+              }
+            }}
             id="back-assessment-button"
           >
             Back
           </Button>
           <Button
             onClick={handleNextClick}
-            className="mx-2 px-5"
+            kind={KIND.secondary}
+            overrides={{
+              BaseButton: {
+                style: {
+                  paddingLeft: '6rem',
+                  paddingRight: '6rem',
+                }
+              }
+            }}
             id="start-assessment-button"
           >
             Next
@@ -23,18 +38,34 @@ export default function BackNext({ handleBackClick, handleNextClick, is_centered
         </div>
       ) : (
         <>
-          <div className="col-sm-4"></div>
-          <div className="col-12 col-sm-8 d-flex justify-content-center justify-content-md-end my-3">
+          <div className="sm:w-1/3"></div>
+          <div className="w-full sm:w-2/3 flex justify-center md:justify-end my-3 space-x-6">
             <Button
               onClick={handleBackClick}
-              className="mx-2 px-5"
+              kind={KIND.secondary}
+              overrides={{
+                BaseButton: {
+                  style: {
+                    paddingLeft: '6rem',
+                    paddingRight: '6rem',
+                  }
+                }
+              }}
               id="back-assessment-button"
             >
               Back
             </Button>
             <Button
               onClick={handleNextClick}
-              className="ms-2 px-5"
+              kind={KIND.secondary}
+              overrides={{
+                BaseButton: {
+                  style: {
+                    paddingLeft: '6rem',
+                    paddingRight: '6rem',
+                  }
+                }
+              }}
               id="start-assessment-button"
             >
               Next

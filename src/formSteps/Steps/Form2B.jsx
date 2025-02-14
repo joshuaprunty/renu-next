@@ -1,8 +1,13 @@
 import { useState } from "react";
 import BackNext from "@/components/Form/BackNext";
 import { schools } from "@/lib/constants";
-import { Button } from "@/components/ui/button";
+import { Button, KIND } from "baseui/button";
+import { RadioGroup, Radio, ALIGN } from "baseui/radio";
+
+
+
 export default function Form2B({ currSchool, updateFormData, nextStep, backStep }) {
+  const [value, setValue] = useState(currSchool);
   const [selectedSchool, setSelectedSchool] = useState(
     schools.indexOf(currSchool) + 1
   );
@@ -34,7 +39,7 @@ export default function Form2B({ currSchool, updateFormData, nextStep, backStep 
       <div className="flex flex-col justify-center items-center w-1/2">
         <div className="w-7/8 grid gap-2 relative z-2">
           <h2>Your School/College:</h2>
-          {schools.map((school, index) => (
+          {/* {schools.map((school, index) => (
             <Button
               key={index}
               className={`flex items-center justify-start py-3 border outline-none ${
@@ -51,7 +56,19 @@ export default function Form2B({ currSchool, updateFormData, nextStep, backStep 
                 {school}
               </span>
             </Button>
-          ))}
+          ))} */}
+          <RadioGroup
+            value={value}
+            onChange={e => setValue(e.currentTarget.value)}
+            name="number"
+            align={ALIGN.vertical}
+          >
+            {schools.map((school, index) => (
+              <Radio key={index} value={school}>
+                {school}
+              </Radio>
+            ))}
+          </RadioGroup>
           <BackNext
             handleBackClick={handleBackClick}
             handleNextClick={handleNextClick}

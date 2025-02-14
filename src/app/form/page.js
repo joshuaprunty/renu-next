@@ -28,7 +28,7 @@ export default function FormWrapper() {
         setCurrentStep(9);
       }, 3000);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [scores]);
 
   const nextStep = () => {
@@ -112,7 +112,7 @@ export default function FormWrapper() {
   };
 
   return (
-    <div className="h-screen max-w-[100rem] mx-auto px-4 flex flex-col justify-center items-center">
+    <div className="h-screen w-1/3 mx-auto px-4 flex flex-col justify-center items-center">
       {renderStep()}
     </div>
   );
