@@ -38,7 +38,8 @@ export default function Secondary() {
           </div>
         </div>
       </div>
-      <div className="line"></div>
+      <div className="h-[1px] bg-gray-200 w-full"></div>
     </>
   );
 }
+

@@ -9,7 +9,7 @@ export default function Quaternary() {
           <div className="row h-100 align-content-center">
             <div className="col-sm-2"></div>
             <div className="col-sm-8 justify-content-center text-center ms-auto">
-              <h2 className="text-white text-center myfw2 mb-4">
+              <h2 className="text-white text-center font-light mb-4">
                 Find your next class now
               </h2>
               <a href="./form" className="btn btn-light btn-lg">

@@ -11,12 +11,12 @@ export default function Hero() {
               <h1 className="text-5xl font-light mb-4">
                 Find your next class without the guesswork.
               </h1>
-              <p className="myfw fs-3 mb-4">
+              <p className="font-light fs-3 mb-4">
                 Get tailored recommendations for major requirements, distros,
                 and more.
               </p>
               <a href="./form" className="btn btn-outline-light btn-lg">
-                <p className="myfw fixie">Get Started</p>
+                <p className="font-light pb-0 mb-0">Get Started</p>
               </a>
             </div>
             <div className="col-12 col-md-5 fw-light text-center">

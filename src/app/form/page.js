@@ -9,7 +9,7 @@ import Form3B from "@/formSteps/Form3B";
 import FormLoad from "@/formSteps/FormLoad";
 import FormResults from "@/formSteps/FormResults";
 import { processFormData } from "@/processFormData";
-import "@/styles/Form.css";
+import "@/styles/Home.css";
 
 export default function FormWrapper() {
   const [currentStep, setCurrentStep] = useState(1);
@@ -109,5 +109,6 @@ export default function FormWrapper() {
     }
   };
 
-  return <div className="vh-100 container-lg formcont">{renderStep()}</div>;
+  return <div className="vh-100 container-lg flex flex-col justify-center items-center">{renderStep()}</div>;
 }
+

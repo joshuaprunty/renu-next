@@ -6,9 +6,6 @@ body {
   background-color: #2a292c;
 }
 
-
-
-/* HERO --------------------------------------------------*/
 .hero-div {
   background-image: url(/Deering.jpg);
   background-size: cover;
@@ -21,8 +18,6 @@ body {
   padding-top: 5rem;
   padding-bottom: 4rem;
 }
-
-
 
 .ternary-card {
   border: 1px solid #dedede;
@@ -55,7 +50,6 @@ body {
   padding: 0 20px;
 }
 
-/* QUATERNARY ----------------------------------------------*/
 .quaternary-div {
   background-color: #443161;
   height: 65vh;
@@ -86,47 +80,168 @@ body {
   z-index: 0;
 }
 
-/* FOOTER -------------------------------------------------*/
-.footer-div {
-  font-size: 0.9em;
-  padding: 20px;
+
+
+
+.form-div-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
 }
 
-.footer-list {
-  list-style: none;
-  padding: 0px;
+.form-div-major {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 35%;
+  width: 100%;
+  max-width: 700px;
 }
 
-.fl-top {
-  font-weight: 700;
+.form-div-res {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 50%;
+  height: 60%;
 }
 
-.footer-link {
-  color: inherit;
-  text-decoration: none;
+.form-progress-bar {
+  width: 15%;
+  background-color: #000000;
+  margin: auto 0;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-.footer-link:hover {
-  font-weight: bold;
-  transition-duration: 0.2s;
+#start-assessment-button {
+  background-color: #443161 !important;
 }
 
-.line {
-  height: 1px;
-  background-color: #dedede;
-  width: 100vw;
+#start-assessment-button:hover {
+  background-color: #352060 !important;
+  transition-duration: 0.15s !important;
 }
 
-.myfw {
-  font-weight: 100;
+.form-content {
+  width: 86%;
 }
 
-.fixie {
-  padding-bottom: 0;
-  margin-bottom: 0;
+.load-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.myfw2 {
-  font-weight: 300;
-  opacity: 80%;
+
+@media screen and (max-width: 767px) {
+  .form-progress-bar {
+    display: none;
+    width: 0;
+  }
+
+  .form-div-main {
+    width: 100%;
+  }
+}
+
+.check-square {
+  aspect-ratio: 1;
+  height: 20px;
+  width: auto;
+  border-radius: 15%;
+  border: 1px solid #999999;
+  display: inline-block;
+}
+
+.check-square-selected {
+  border: 4px solid #443161;
+}
+
+.form-background-img {
+  display: block;
+  height: 150%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.errormsg {
+  color: red;
+  transform: translateY(-55px);
+}
+
+.selected-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  padding: 20px 10px 20px 10px;
+  font-size: 1.1em;
+  font-weight: 200
+}
+
+.result-card {
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  width: 70%;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: baseline;
+  padding: 15px;
+  padding-top: 20px
+}
+
+.result-card {
+  transition: height 0.4s ease-in-out;
+}
+
+.result-card:hover {
+  height: 150px;
+}
+
+.more-info {
+  opacity: 0%;
+}
+
+
+.result-card:hover .more-info {
+  opacity: 100%;
+  transition: opacity 0.6s ease-in-out
+}
+
+.title-score-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.thinoutline {
+  border: 1px solid #cfcfcf !important;
+}
+
+.thinoutselected {
+  border: 1px solid #443161 !important;
+}
+
+.thinoutselected:hover,
+.thinoutline:hover {
+  background-color: #cbcccf !important;
 }

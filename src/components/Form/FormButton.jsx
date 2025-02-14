@@ -1,5 +1,4 @@
 import "@/styles/Home.css";
-import "@/styles/Form.css";
 
 export default function FormButton({ key, school }) {
   return (
