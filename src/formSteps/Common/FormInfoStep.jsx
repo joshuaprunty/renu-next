@@ -11,7 +11,7 @@ export default function FormInfoStep({ nextStep, backStep, heading, subheading }
 
   return (
     <div className="flex flex-col justify-center items-center w-1/2">
-      <div className="w-7/8 d-grid gap-2 position-relative z-2">
+      <div className="w-7/8 grid gap-2 relative z-2">
         <h1 className="text-center">{heading}</h1>
         <p className="text-center">{subheading}</p>
         <BackNext

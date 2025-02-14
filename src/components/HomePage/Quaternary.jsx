@@ -18,7 +18,7 @@ export default function Quaternary() {
                 Find your next class now
               </h2>
               <Link href="./form" className="">
-                <Button className="text-lg font-light py-5 px-8">Get Started</Button>
+                <Button variant="outline" className="text-lg font-light py-5 px-8">Get Started</Button>
               </Link>
             </div>
             <div className="w-1/6"></div>

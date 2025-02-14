@@ -11,13 +11,13 @@ export default function Form3A({ updateFormData, nextStep, backStep }) {
 
   return (
     <>
-      <div className="container-fluid position-fixed vh-100 mt-5 mb-0">
-        <div className="flex flex-col justify-center items-center w-1/2 bg-white h-100">
+      <div className="fixed inset-0 mt-20 mb-0 min-h-screen">
+        <div className="flex flex-col justify-center items-center w-1/2 bg-white h-full">
           <img 
             src="/NorthwesternN.png"
             className="block h-[150%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0"
           />
-          <div className="w-7/8 d-grid gap-2 position-relative z-2">
+          <div className="w-7/8 grid gap-2 relative z-10">
             <h1>Preference Questions</h1>
             <p>
               This section will ask you to specify preferences about specific
@@ -29,9 +29,9 @@ export default function Form3A({ updateFormData, nextStep, backStep }) {
             />
           </div>
         </div>
-        <div className="w-1/6 bg-black m-auto absolute top-0 right-0 h-100 pt-2 px-4 text-center text-white mb-0">
-          <div className="p-b-left h-100"></div>
-          <div className="p-b-right h-100"></div>
+        <div className="w-1/6 bg-black mx-auto absolute top-0 right-0 h-full pt-2 px-4 text-center text-white mb-0">
+          <div className="h-full"></div>
+          <div className="h-full"></div>
         </div>
       </div>
     </>

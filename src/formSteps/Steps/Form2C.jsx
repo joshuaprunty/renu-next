@@ -56,7 +56,7 @@ export default function Form2C({
 
   return (
     <div className="flex flex-col justify-start items-center h-[35%] w-full max-w-[700px]">
-      <div className="w-7/8 d-grid gap-2 position-relative z-2">
+      <div className="w-7/8 grid gap-2 relative z-2">
         <h2>Add your current/intended majors.</h2>
         <h5>Majors for {fullSchools[currSchool]} </h5>
         <Select
@@ -93,7 +93,7 @@ export default function Form2C({
           is_centered={false}
         />
         {errorState && (
-          <p className="position-absolute">
+          <p className="absolute">
             Please select at least one major to proceed.
           </p>
         )}

@@ -36,22 +36,22 @@ export default function FormSelectStep({
   return (
     <>
       <div className="flex flex-col justify-center items-center w-1/2">
-        <div className="w-7/8 d-grid gap-2 position-relative z-2">
+        <div className="w-7/8 grid gap-2 relative z-2">
           <h2>{heading}</h2>
           {options.map((option, index) => (
             <button
               key={index}
-              className={`btn btn-outline-secondary d-flex align-items-center py-3 border ${
+              className={`flex items-center py-3 border ${
                 selectedOption === index + 1 ? "border-gray-500" : "border-gray-200"
               }`}
               onClick={() => handleOptionClick(index + 1)}
             >
               <div
-                className={`aspect-square h-5 w-5 rounded-[15%] border border-[#999999] inline-block ms-4 ${
+                className={`aspect-square h-5 w-5 rounded-[15%] border border-[#999999] ml-4 ${
                   selectedOption === index + 1 ? "border-4 border-[#443161]" : ""
                 }`}
               ></div>
-              <span className="form-option-text ms-lg-5 ms-3 fs-5">
+              <span className="ml-3 text-left text-xl">
                 {option}
               </span>
             </button>

@@ -27,20 +27,20 @@ export default function Form3B({ currDiff, updateFormData, nextStep, backStep })
 
   return (
     <div className="flex flex-col justify-center items-center w-1/2">
-      <div className="w-7/8 d-grid gap-2 position-relative z-2">
+      <div className="w-7/8 grid gap-2 relative z-2">
         <h2>How challenging of a course are you looking for?</h2>
         {diffs.map((diff, index) => (
           <button
             key={index}
-            className="btn btn-outline-secondary d-flex align-items-center py-3"
+            className="flex items-center py-3 border outline-none hover:bg-gray-100"
             onClick={() => handleDiffClick(index + 1)}
           >
             <div
-              className={`aspect-square h-5 w-5 rounded-[15%] border border-[#999999] inline-block ms-4 ${
+              className={`aspect-square h-5 w-5 rounded-[15%] border border-[#999999] ml-4 ${
                 selectedDiff === index + 1 ? "border-4 border-[#443161]" : ""
               }`}
             ></div>
-            <span className="form-option-text text-start ms-3 fs-5">
+            <span className="text-left ml-3 text-xl">
               {diff}
             </span>
           </button>
@@ -50,7 +50,7 @@ export default function Form3B({ currDiff, updateFormData, nextStep, backStep })
           handleNextClick={handleNextClick}
         />
         {errorState && (
-          <p className="position-absolute">
+          <p className="absolute">
             Please select an option to proceed.
           </p>
         )}

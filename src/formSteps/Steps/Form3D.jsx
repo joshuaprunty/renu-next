@@ -28,26 +28,26 @@ export default function Form3D({ currDay, updateFormData, nextStep, backStep }) 
   };
 
   return (
-    <div className="container-fluid position-fixed vh-100 mt-5 mb-0">
-      <div className="flex flex-col justify-center items-center w-1/2 bg-white h-100">
+    <div className="fixed inset-0 mt-20 mb-0 min-h-screen">
+      <div className="flex flex-col justify-center items-center w-1/2 bg-white h-full">
         <img
           className="block h-[150%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0"
           src="/NorthwesternN.png"
         />
-        <div className="formq-content d-grid gap-2 position-relative z-2">
+        <div className="w-7/8 grid gap-2 relative z-10">
           <h2>I am looking for a course that meets on:</h2>
           {days.map((day, index) => (
             <button
               key={index}
-              className="btn btn-outline-secondary d-flex align-items-center py-3"
+              className="flex items-center py-3 border outline-none hover:bg-gray-100"
               onClick={() => handleDayClick(index + 1)}
             >
               <div
-                className={`aspect-square h-5 w-5 rounded-[15%] border border-[#999999] inline-block ms-4 ${
+                className={`aspect-square h-5 w-5 rounded-[15%] border border-[#999999] ml-4 ${
                   selectedDay === index + 1 ? "border-4 border-[#443161]" : ""
                 }`}
               ></div>
-              <span className="form-option-text ms-3 text-start fs-5">
+              <span className="ml-3 text-left text-xl">
                 {day}
               </span>
             </button>
@@ -57,15 +57,15 @@ export default function Form3D({ currDay, updateFormData, nextStep, backStep }) 
             handleNextClick={handleNextClick}
           />
           {errorState && (
-            <p className="position-absolute">
+            <p className="absolute">
               Please select an option to proceed.
             </p>
           )}
         </div>
       </div>
-      <div className="w-1/6 bg-black m-auto absolute top-0 right-0 h-100 pt-2 px-4 text-center text-white mb-0">
-        <div className="p-b-left h-100"></div>
-        <div className="p-b-right h-100"></div>
+      <div className="w-1/6 bg-black mx-auto absolute top-0 right-0 h-full pt-2 px-4 text-center text-white mb-0">
+        <div className="h-full"></div>
+        <div className="h-full"></div>
       </div>
     </div>
   );

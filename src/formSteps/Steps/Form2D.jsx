@@ -32,20 +32,22 @@ export default function Form2D({ currFulfill, updateFormData, nextStep, backStep
 
   return (
     <div className="flex flex-col justify-center items-center w-1/2">
-      <div className="w-7/8 d-grid gap-2 position-relative z-2">
+      <div className="w-7/8 grid gap-2 relative z-2">
         <h2>What requirement(s) are you looking to fulfill?</h2>
         {fulfills.map((fulfill, index) => (
           <button
             key={index}
-            className="btn btn-outline-secondary d-flex align-items-center py-3"
+            className={`flex items-center py-3 border outline-none ${
+              selectedFulfills === index + 1 ? "border-gray-500" : "border-gray-200"
+            }`}
             onClick={() => handleFulfillsClick(index + 1)}
           >
             <div
-              className={`aspect-square h-5 w-5 rounded-[15%] border border-[#999999] inline-block ms-4 ${
+              className={`aspect-square h-5 w-5 rounded-[15%] border border-[#999999] ml-4 ${
                 selectedFulfills === index + 1 ? "border-4 border-[#443161]" : ""
               }`}
             ></div>
-            <span className="form-option-text text-start ms-lg-5 ms-3 fs-5">
+            <span className="text-start ml-3 lg:ml-5 text-xl">
               {fulfill}
             </span>
           </button>
@@ -56,7 +58,7 @@ export default function Form2D({ currFulfill, updateFormData, nextStep, backStep
           is_centered={false}
         />
         {errorState && (
-          <p className="position-absolute">
+          <p className="absolute">
             Please select at least one requirement area to proceed.
           </p>
         )}
