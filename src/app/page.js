@@ -4,7 +4,6 @@ import Ternary from "@/components/HomePage/Ternary";
 import Quaternary from "@/components/HomePage/Quaternary";
 import Footer from "@/components/Footer";
 import MobileFooter from "@/components/MobileFooter";
-import "@/styles/util.css";
 
 export default function Home() {
   return (

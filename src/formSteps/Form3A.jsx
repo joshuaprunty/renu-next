@@ -22,7 +22,7 @@ function Form3A({ updateFormData, nextStep, backStep }) {
     <>
       <div class="container-fluid position-fixed vh-100 mt-5 mb-0">
         <div class="form-div-main bg-white h-100">
-          <img id="form-background-img" src="src/assets/NorthwesternN.png" />
+          <img id="form-background-img" src="/NorthwesternN.png" />
           <div class="form-content d-grid gap-2 position-relative z-2">
             <h1>Preference Questions</h1>
             <p>

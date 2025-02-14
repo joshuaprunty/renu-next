@@ -2,10 +2,10 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+    <nav className="opacity-95 fixed-top navbar-expand-lg bg-body-tertiary">
       <div className="container-lg">
         <a
-          className="navbar-brand"
+          className="text-2xl text-center pt-0"
           href="/"
           style={{
             fontSize: "2em",
@@ -88,7 +88,7 @@ export default function Navbar() {
           <span className="navbar-text">v. 0.1.0</span>
         </div>
       </div>
-      <div className="nav-bottom-border"></div>
+      <div className="w-100 h-[1px] bg-body-tertiary"></div>
     </nav>
   );
 }

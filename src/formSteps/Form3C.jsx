@@ -45,7 +45,7 @@ function Form3C({ currLoc, updateFormData, nextStep, backStep }) {
       <div className="form-div-main bg-white h-100">
         <img
           className="form-background-img"
-          src="src/assets/NorthwesternN.png"
+          src="/NorthwesternN.png"
         />
         <div className="formq-content d-grid gap-2 position-relative z-2">
           <h2>I am looking for a course that is located on/near:</h2>

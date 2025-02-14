@@ -1,4 +1,3 @@
-import "@/styles/LandingCard.css";
 import "@/styles/Home.css";
 
 export default function Secondary() {
@@ -19,17 +18,17 @@ export default function Secondary() {
 
   return (
     <>
-      <div className="bg-white secondary-div" id="secondary-div">
+      <div className="bg-white flex justify-center items-center py-[6rem]" id="secondary-div">
         <div className="container-lg">
-          <p className="second-header text-center">How Renu Works</p>
-          <hr className="secondary-hr text-black" />
+          <p className="text-5xl text-center">How Renu Works</p>
+          <hr className="w-2/3 mx-auto mt-0 mb-[20px] text-black" />
           <div className="row justify-content-center text-center px-2">
             {cardData.map((data, index) => (
               <div key={index} className="col-11 col-md-4 my-3 my-md-2">
                 <div className="card h-100 py-3 px-lg-3">
                   <div className="card-body">
-                    <h5 className="fs-4 cardtitle mb-4">{data.title}</h5>
-                    <p className="fs-4 cardbody fw-light mb-md-5">
+                    <h5 className="fs-4 h-[3.5em] font-weight-400 mb-4">{data.title}</h5>
+                    <p className="fs-4 h-[50%] fw-light mb-md-5">
                       {data.text}
                     </p>
                   </div>

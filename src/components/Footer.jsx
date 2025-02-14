@@ -1,9 +1,8 @@
 import "@/styles/Home.css";
-import "@/styles/util.css";
 
 export default function Footer() {
   return (
-    <div className="footer-div bg-body-tertiary hide-sm">
+    <div className="footer-div bg-body-tertiary sm:hidden">
       <div className="container-lg">
         <div className="row justify-content-start justify-content-md-center">
           <div className="col-md-3 justify-content-center">

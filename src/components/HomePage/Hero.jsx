@@ -1,4 +1,3 @@
-
 import "@/styles/Home.css";
 
 export default function Hero() {
@@ -9,7 +8,7 @@ export default function Hero() {
         <div className="hero-div container-lg" id="hero-div">
           <div className="row align-items-center">
             <div className="col-12 col-md-6 text-white text-center m-auto">
-              <h1 className="hero-header mb-4">
+              <h1 className="text-5xl font-light mb-4">
                 Find your next class without the guesswork.
               </h1>
               <p className="myfw fs-3 mb-4">
@@ -22,8 +21,8 @@ export default function Hero() {
             </div>
             <div className="col-12 col-md-5 fw-light text-center">
               <img
-                src="src/assets/HeroCard.png"
-                className="hero-img align-self-center"
+                src="/HeroCard.png"
+                className="w-10/12 lg:w-3/4 mt-[45px] lg:mt-0 h-auto   align-self-center"
               />
             </div>
           </div>

@@ -10,11 +10,11 @@ export default function Modal() {
       <div className="modal-dialog modal-dialog-centered">
         <div className="modal-content">
           <div className="modal-header border-0">
-            <div className="modal-heading-div text-center">
-              <h1 className="modal-title modal-brand" id="about-modal-heading">
+            <div className="m-auto text-center">
+              <h1 className="text-center text-3xl font-bold text-[#443161]" id="about-modal-heading">
                 renu.
               </h1>
-              <p className="modal-version">Version 0.0.1</p>
+              <p className="font-thin text-xl">Version 0.0.1</p>
             </div>
             <button
               type="button"
@@ -35,7 +35,7 @@ export default function Modal() {
             </button>
           </div>
           <div className="modal-footer text-center border-0">
-            <a href="#" className="text-body fw-light modal-footer-link">
+            <a href="#" className="text-body fw-light text-sm m-auto">
               Designed and built by Joshua Prunty
             </a>
           </div>

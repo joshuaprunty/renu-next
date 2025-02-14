@@ -1,9 +1,8 @@
 import "@/styles/Home.css";
-import "@/styles/util.css";
 
 export default function MobileFooter() {
   return (
-    <div className="footer-div bg-body-tertiary hide-lg">
+    <div className="footer-div bg-body-tertiary lg:hidden">
       <div className="container-lg">
         <div className="row justify-content-start justify-content-md-center">
           <div className="d-flex justify-content-start flex-row">

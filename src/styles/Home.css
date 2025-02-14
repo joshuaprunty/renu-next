@@ -3,50 +3,10 @@
 }
 
 body {
-  font-family: "Lato";
   background-color: #2a292c;
 }
 
-/* NAVBAR -----------------------------------------------------------*/
-.navbar {
-  opacity: 95%;
-}
 
-.nav-bottom-border {
-  width: 100vw;
-  position: absolute;
-  bottom: 0;
-  height: 1px;
-  background-color: #dedede;
-}
-
-.navbar-brand {
-  font-size: 1.6em;
-  align-self: center;
-  padding-top: 0;
-}
-
-/* MODAL ----------------------------------------------------------*/
-.modal-brand {
-  color: #443161;
-  margin: auto;
-  font-size: 2.3em;
-  font-weight: 700;
-}
-
-.modal-heading-div {
-  margin: auto;
-}
-
-.modal-version {
-  font-weight: 100;
-  font-size: 1.3em;
-}
-
-.modal-footer-link {
-  font-size: 0.8em;
-  margin: auto;
-}
 
 /* HERO --------------------------------------------------*/
 .hero-div {
@@ -62,46 +22,7 @@ body {
   padding-bottom: 4rem;
 }
 
-.hero-img {
-  width: 75%;
-  height: auto;
-}
 
-@media (max-width: 767px) {
-  .hero-img {
-    width: 90%;
-    margin-top: 45px;
-  }
-}
-
-.hero-header {
-  font-size: 3em;
-  font-weight: 300;
-}
-
-/* SECONDARY ----------------------------------------------*/
-.secondary-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  background: linear-gradient(to bottom, #ffffff, #f6f2fa);
-}
-
-.second-header {
-  font-size: 3em;
-}
-
-.secondary-hr {
-  width: 70%;
-  margin: 0 auto 20px;
-}
-
-/* TERNARY */
-.ternary-div {
-  background-color: #ffffff;
-}
 
 .ternary-card {
   border: 1px solid #dedede;
@@ -113,16 +34,6 @@ body {
   overflow: hidden;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
   display: flex;
-}
-
-.tc-head {
-  font-size: 2em;
-  font-weight: 400;
-}
-
-.tc-body {
-  font-weight: 200;
-  font-size: 1.2em;
 }
 
 .tc-img {
