@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+
 export default function Quaternary() {
   return (
     <div className="bg-[#443161] h-[65vh] min-h-[350px] flex justify-center overflow-hidden relative" id="quabg-white">

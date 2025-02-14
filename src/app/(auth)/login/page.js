@@ -1,8 +1,9 @@
 'use client'
+
 import LoginForm from "@/components/auth/LoginForm";
 import Link from "next/link";
 
-function Page() {
+export default function Page() {
   return (
     <div className="flex flex-col justify-center items-center h-screen">
       <div className="w-96 bg-background rounded-lg shadow-lg p-6">
@@ -15,5 +16,3 @@ function Page() {
     </div>
   );
 }
-
-export default Page;

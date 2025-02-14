@@ -1,3 +1,4 @@
+
 export default function FormResults({ scores }) {
   return (
     <div className="flex flex-col justify-center items-center w-1/2">

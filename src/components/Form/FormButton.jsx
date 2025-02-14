@@ -14,4 +14,3 @@ export default function FormButton({ key, school }) {
     </button>
   );
 }
-

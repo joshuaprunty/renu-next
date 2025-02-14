@@ -1,3 +1,4 @@
+
 export default function BackNext({ handleBackClick, handleNextClick, is_centered }) {
   return (
     <div className="row">
@@ -42,4 +43,3 @@ export default function BackNext({ handleBackClick, handleNextClick, is_centered
     </div>
   );
 }
-

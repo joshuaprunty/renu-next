@@ -2,15 +2,9 @@ import Link from "next/link";
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from "@/components/ui/navigation-menu"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button";
+
 export default function Navbar() {
   const navLinks = [
-    // {
-    //   href: "/login",
-    //   label: "Log In",
-    //   className: cn(
-    //     "group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-semibold transition-colors bg-blue-600 hover:bg-blue-700 text-white"
-    //   ),
-    // },
     { href: "/", label: "Home" },
     { href: "/form", label: "Get Started" },
     { href: "/about", label: "About" },
@@ -45,7 +39,6 @@ export default function Navbar() {
                   aria-current={undefined}
                 >
                   <Button>Log In</Button>
-                  {/* <span className="text-sm font-medium">Log In</span> */}
                 </Link>
                 {navLinks.map((link, index) => (
                   <NavigationMenuItem key={index}>
