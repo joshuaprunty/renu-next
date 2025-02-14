@@ -16,8 +16,7 @@ export default function Hero() {
                 and more.
               </p>
               <Link href="/form" className="inline-block">
-                {/* <p className="font-light pb-0 m-0">Get Started</p> */}
-                <Button>Get Started</Button>
+                <Button className="text-lg font-light py-5 px-8">Get Started</Button>
               </Link>
             </div>
             <div className="w-full md:w-5/12 font-light text-center">

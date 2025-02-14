@@ -14,11 +14,11 @@ export default function Quaternary() {
           <div className="flex h-full items-center">
             <div className="w-1/6"></div>
             <div className="w-2/3 justify-center text-center mx-auto">
-              <h2 className="text-white text-center font-light mb-4">
+              <h2 className="text-white text-center text-4xl mb-5">
                 Find your next class now
               </h2>
               <Link href="./form" className="">
-                <Button>Get Started</Button>
+                <Button className="text-lg font-light py-5 px-8">Get Started</Button>
               </Link>
             </div>
             <div className="w-1/6"></div>

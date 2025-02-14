@@ -7,7 +7,7 @@ export default function Footer() {
           <div className="flex justify-center">
             <div className="">
               <ul className="list-none">
-                <li className="font-extrabold">Renu</li>
+                <li className="font-semibold">Renu</li>
                 <li className="font-light">v0.0.1</li>
                 <li className="font-light">
                   Created by <br />
@@ -19,7 +19,7 @@ export default function Footer() {
           <div className="flex justify-center">
             <div className="">
               <ul className="list-none">
-                <li className="font-extrabold">Links</li>
+                <li className="font-semibold">Links</li>
                 <li className="font-light">
                   <a className="text-inherit no-underline" href="/">
                     Home
@@ -41,7 +41,7 @@ export default function Footer() {
           <div className="flex justify-center">
             <div className="">
               <ul className="list-none">
-                <li className="font-extrabold">Pages</li>
+                <li className="font-semibold">Pages</li>
                 <li className="font-light">
                   <a className="text-inherit no-underline" href="/">
                     Home
