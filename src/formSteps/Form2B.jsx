@@ -48,8 +48,8 @@ function Form2B({ currSchool, updateFormData, nextStep, backStep }) {
               onClick={() => handleSchoolClick(index + 1)}
             >
               <div
-                className={`check-square ms-4 ${
-                  selectedSchool === index + 1 ? "check-square-selected" : ""
+                className={`aspect-square h-5 w-5 rounded-[15%] border border-[#999999] inline-block ms-4 ${
+                  selectedSchool === index + 1 ? "border-4 border-[#443161]" : ""
                 }`}
               ></div>
               <span className="form-option-text ms-lg-5 ms-3 fs-5">
@@ -63,7 +63,7 @@ function Form2B({ currSchool, updateFormData, nextStep, backStep }) {
             is_centered={false}
           />
           {errorState && (
-            <p className="position-absolute errormsg">
+            <p className="position-absolute">
               Please select a school to proceed.
             </p>
           )}

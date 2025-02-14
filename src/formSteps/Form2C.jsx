@@ -86,7 +86,11 @@ function Form2C({
               exampleOptions.find((option) => option.value === majorValue)
                 ?.label || majorValue;
             return (
-              <div key={index} className="selected-item">
+              <div 
+                key={index} 
+                className="flex justify-between items-center w-full border border-[#dddddd] rounded-md 
+                         my-2 px-2.5 py-5 text-lg font-light"
+              >
                 {majorLabel}{" "}
                 <button
                   className="btn btn-close btn-sm"
@@ -102,7 +106,7 @@ function Form2C({
           is_centered={false}
         />
         {errorState && (
-          <p className="position-absolute errormsg">
+          <p className="position-absolute">
             Please select at least one major to proceed.
           </p>
         )}

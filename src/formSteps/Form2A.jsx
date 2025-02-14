@@ -37,14 +37,14 @@ function Form2A({ currYear, updateFormData, nextStep, backStep }) {
           {years.map((year, index) => (
             <button
               key={index}
-              className={`btn btn-outline-secondary d-flex align-items-center py-3 ${
-                selectedYear === index + 1 ? "thinoutselected" : "thinoutline"
+              className={`btn btn-outline-secondary d-flex align-items-center py-3 border ${
+                selectedYear === index + 1 ? "border-gray-500" : "border-gray-200"
               }`}
               onClick={() => handleYearClick(index + 1)}
             >
               <div
-                className={`check-square ms-4 ${
-                  selectedYear === index + 1 ? "check-square-selected" : ""
+                className={`aspect-square h-5 w-5 rounded-[15%] border border-[#999999] inline-block ms-4 ${
+                  selectedYear === index + 1 ? "border-4 border-[#443161]" : ""
                 }`}
               ></div>
               <span className="form-option-text ms-lg-5 ms-3 fs-5">{year}</span>
@@ -56,7 +56,7 @@ function Form2A({ currYear, updateFormData, nextStep, backStep }) {
             is_centered={false}
           />
           {errorState && (
-            <p className="position-absolute errormsg">
+            <p className="position-absolute">
               Please select a year to proceed.
             </p>
           )}

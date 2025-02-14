@@ -31,7 +31,7 @@ export default function Footer() {
                   </a>
                 </li>
                 <li className="font-light">
-                  <a className="text-inherit no-underline" href="#ternary-div">
+                  <a className="text-inherit no-underline" href="#bg-white">
                     Students
                   </a>
                 </li>

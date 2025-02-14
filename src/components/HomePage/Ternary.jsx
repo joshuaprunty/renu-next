@@ -1,12 +1,11 @@
 
 export default function Ternary() {
   return (
-    <div className="bg-white" id="ternary-div">
+    <div className="bg-white" id="bg-white">
       <div className="container mx-auto py-20 px-6">
         <p className="text-5xl text-center">Built for every student</p>
-        <hr className="secondary-hr" />
+        <hr className="w-2/3 mx-auto mt-0 mb-5 text-black" />
         <div className="flex flex-wrap mt-4 px-4 text-center">
-
           <div className="w-full lg:w-3/4 md:gap-3">
             <div className="flex w-full h-60 border border-[#dedede] rounded-[18px] overflow-hidden shadow-[0_1px_3px_rgba(0,0,0,0.2)] m-6 p-2">
               <img 

@@ -10,7 +10,7 @@ function FormLoad() {
   // Return Statement ---------------------------------------------------
   return (
     <div className="flex flex-col justify-center items-center w-1/2">
-      <div className="load-content">
+      <div className="w-full flex flex-col justify-center items-center">
         <l-ripples
           size="90"
           speed="2"
@@ -23,5 +23,4 @@ function FormLoad() {
   );
 }
 
-// Export
 export default FormLoad;

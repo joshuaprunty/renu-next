@@ -50,8 +50,8 @@ function Form3D({ currDay, updateFormData, nextStep, backStep }) {
               onClick={() => handleDayClick(index + 1)}
             >
               <div
-                className={`check-square ms-4 ${
-                  selectedDay === index + 1 ? "check-square-selected" : ""
+                className={`aspect-square h-5 w-5 rounded-[15%] border border-[#999999] inline-block ms-4 ${
+                  selectedDay === index + 1 ? "border-4 border-[#443161]" : ""
                 }`}
               ></div>
               <span className="form-option-text ms-3 text-start fs-5">
@@ -64,7 +64,7 @@ function Form3D({ currDay, updateFormData, nextStep, backStep }) {
             handleNextClick={handleNextClick}
           />
           {errorState && (
-            <p className="position-absolute errormsg">
+            <p className="position-absolute">
               Please select an option to proceed.
             </p>
           )}

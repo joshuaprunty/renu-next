@@ -9,12 +9,18 @@ function FormResults({ scores }) {
   // Return Statement ---------------------------------------------------
   return (
     <div className="flex flex-col justify-center items-center w-1/2">
-      <div className="load-content">
+      <div className="w-full flex flex-col justify-center items-center">
         <h1 className="my-3">Results</h1>
-        <hr className="secondary-hr" />
+        <hr className="w-2/3 mx-auto mt-0 mb-5 text-black" />
         {scores.slice(0, 10).map((score, index) => (
-          <div key={index} className="result-card my-2">
-            <div className="title-score-container">
+          <div 
+            key={index} 
+            className="w-[70%] h-[70px] border border-[#dddddd] rounded-md p-4 pt-5 my-2
+                     flex flex-col justify-start items-start
+                     transition-[height] duration-400 ease-in-out
+                     hover:h-[150px] group"
+          >
+            <div className="flex justify-between items-center w-full">
               <h3>{score.title}</h3>
               <h5>Score: {score.finalScore.toFixed(1)}</h5>
             </div>
@@ -25,8 +31,7 @@ function FormResults({ scores }) {
               Average Hours/Week: {score.hrsPerWeek}
             </p>
             <p className="opacity-0 transition-opacity duration-600 ease-in-out group-hover:opacity-100">
-              Largest Demographic: {score.maxDemo.maxKey} (
-              {score.maxDemo.mvString})
+              Largest Demographic: {score.maxDemo.maxKey} ({score.maxDemo.mvString})
             </p>
           </div>
         ))}
@@ -35,5 +40,4 @@ function FormResults({ scores }) {
   );
 }
 
-// Export
 export default FormResults;
