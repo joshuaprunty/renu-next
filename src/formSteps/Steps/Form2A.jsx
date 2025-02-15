@@ -67,27 +67,16 @@ export default function Form2A({ currYear, updateFormData, nextStep, backStep })
             </div>
           </Button>
         ))} */}
-        {/* <RadioGroup
-          value={value}
-          onChange={e => setValue(e.currentTarget.value)}
-          name="number"
-          align={ALIGN.vertical}
-        >
-          {years.map((year, index) => (
-            <Radio key={index} value={year}>
-              {year}
-            </Radio>
-          ))}
-        </RadioGroup> */}
         <RadioGroup defaultValue="option-one">
-          {years.map((year, index) => (
-            <div className="flex items-center space-x-2 p-6">
-              <RadioGroupItem value={year} id={year} />
-              <Label htmlFor={year}>{year}</Label>
-            </div>  
-          ))}
+          <div className="flex items-center space-x-2">
+            <RadioGroupItem value="option-one" id="option-one" />
+            <Label htmlFor="option-one">Option One</Label>
+          </div>
+          <div className="flex items-center space-x-2">
+            <RadioGroupItem value="option-two" id="option-two" />
+            <Label htmlFor="option-two">Option Two</Label>
+          </div>
         </RadioGroup>
-
         <BackNext
           handleBackClick={handleBackClick}
           handleNextClick={handleNextClick}
