@@ -2,7 +2,9 @@ import { useState } from "react";
 import BackNext from "@/components/Form/BackNext";
 import { years } from "@/lib/constants";
 import { Button, KIND } from "baseui/button";
-import { RadioGroup, Radio, ALIGN } from "baseui/radio";
+// import { RadioGroup, Radio, ALIGN } from "baseui/radio";
+import { Label } from "@/components/ui/label"
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 
 
 export default function Form2A({ currYear, updateFormData, nextStep, backStep }) {
@@ -65,7 +67,7 @@ export default function Form2A({ currYear, updateFormData, nextStep, backStep })
             </div>
           </Button>
         ))} */}
-        <RadioGroup
+        {/* <RadioGroup
           value={value}
           onChange={e => setValue(e.currentTarget.value)}
           name="number"
@@ -76,7 +78,16 @@ export default function Form2A({ currYear, updateFormData, nextStep, backStep })
               {year}
             </Radio>
           ))}
+        </RadioGroup> */}
+        <RadioGroup defaultValue="option-one">
+          {years.map((year, index) => (
+            <div className="flex items-center space-x-2 p-6">
+              <RadioGroupItem value={year} id={year} />
+              <Label htmlFor={year}>{year}</Label>
+            </div>  
+          ))}
         </RadioGroup>
+
         <BackNext
           handleBackClick={handleBackClick}
           handleNextClick={handleNextClick}
