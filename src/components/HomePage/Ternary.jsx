@@ -1,20 +1,19 @@
-
 export default function Ternary() {
   return (
-    <div className="bg-white" id="bg-white">
+    <div className="bg-background" id="bg-white">
       <div className="mx-auto py-20 px-6 max-w-[100rem]">
-        <p className="text-5xl text-center font-medium">Built for every student</p>
-        <hr className="w-5/6 mx-auto my-5 text-black" />
+        <p className="text-5xl text-center font-medium text-foreground">Built for every student</p>
+        <hr className="w-5/6 mx-auto my-5 text-muted-foreground" />
         <div className="flex flex-wrap mt-4 px-4 text-center">
           <div className="w-full lg:w-3/4 md:gap-3">
-            <div className="flex w-full h-60 border border-[#dedede] rounded-[18px] overflow-hidden shadow-[0_1px_3px_rgba(0,0,0,0.2)] m-6 p-2">
+            <div className="flex w-full h-60 border border-border rounded-[18px] overflow-hidden shadow-[0_1px_3px_rgba(0,0,0,0.2)] m-6 p-2 bg-card">
               <img 
                 className="h-full w-1/4 object-cover rounded-[15px] flex-shrink-0" 
                 src="/WCWelcome.png" 
               />
               <div className="flex flex-col justify-center items-center flex-grow px-5">
-                <p className="text-3xl font-light">Incoming First-Years</p>
-                <p className="text-xl font-light">
+                <p className="text-3xl font-light text-card-foreground">Incoming First-Years</p>
+                <p className="text-xl font-light text-card-foreground">
                   Get a head-start on class selections for your first quarter at
                   Northwestern.
                 </p>
@@ -26,10 +25,10 @@ export default function Ternary() {
           <div className="w-full lg:w-1/4"></div>
 
           <div className="w-full lg:w-3/4 md:gap-3">
-            <div className="flex w-full h-60 border border-[#dedede] rounded-[18px] overflow-hidden shadow-[0_1px_3px_rgba(0,0,0,0.2)] m-6 p-2">
+            <div className="flex w-full h-60 border border-border rounded-[18px] overflow-hidden shadow-[0_1px_3px_rgba(0,0,0,0.2)] m-6 p-2 bg-card">
               <div className="flex flex-col justify-center items-center flex-grow px-5">
-                <p className="text-3xl font-light">Current Undergrads</p>
-                <p className="text-xl font-light">
+                <p className="text-3xl font-light text-card-foreground">Current Undergrads</p>
+                <p className="text-xl font-light text-card-foreground">
                   Find the best courses for you based on your favorite (and
                   least favorite) past classes.
                 </p>
@@ -42,14 +41,14 @@ export default function Ternary() {
           </div>
 
           <div className="w-full lg:w-3/4 md:gap-3">
-            <div className="flex w-full h-60 border border-[#dedede] rounded-[18px] overflow-hidden shadow-[0_1px_3px_rgba(0,0,0,0.2)] m-6 p-2">
+            <div className="flex w-full h-60 border border-border rounded-[18px] overflow-hidden shadow-[0_1px_3px_rgba(0,0,0,0.2)] m-6 p-2 bg-card">
               <img 
                 className="h-full w-1/4 object-cover rounded-[15px] flex-shrink-0" 
                 src="/Kellogg.png" 
               />
               <div className="flex flex-col justify-center items-center flex-grow px-5">
-                <p className="text-3xl font-light">Graduate Students</p>
-                <p className="text-xl font-light">
+                <p className="text-3xl font-light text-card-foreground">Graduate Students</p>
+                <p className="text-xl font-light text-card-foreground">
                   Continue on your journey with specialized recommendations.
                 </p>
               </div>

@@ -5,7 +5,7 @@ import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuL
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button";
 import { usePathname } from 'next/navigation';
-
+import ThemeToggle from "./HomePage/Toggle";
 export default function Navbar() {
   const pathname = usePathname();
   
@@ -67,7 +67,10 @@ export default function Navbar() {
                           alt={link.icon.alt}
                           width={link.icon.width}
                           height={link.icon.height}
-                          className={link.icon.className}
+                          className={cn(
+                            link.icon.className,
+                            "dark:invert"
+                          )}
                         />
                       )}
                       {link.icon ? (
@@ -83,6 +86,9 @@ export default function Navbar() {
                     </Link>
                   </NavigationMenuItem>
                 ))}
+                <NavigationMenuItem key={4}>
+                  <ThemeToggle />
+                </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
           </div>

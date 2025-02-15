@@ -1,0 +1,349 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-geist-sans);
+}
+
+@layer base {@tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  
+  @layer base {
+    :root {
+      /* Fonts */
+      --font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      --font-fallback: var(--font-system), sans-serif;
+      --font-plain: var(--plain), var(--font-fallback);
+      --font-inter: var(--inter), var(--font-fallback);
+  
+      /* Header height */
+      --header-height: 50px;
+  
+      /* Text colors */
+      --color-text-white: 237 242 245; /* #edf2f5 */
+      --color-text-dark: 34 34 34; /* #222222 */
+      --color-text-secondary: 159 159 159; /* #9f9f9f */
+      --color-text-tertiary: 80 80 80; /* #505050 */
+      --color-text-quaternary: 20 20 20; /* #141414 */
+      --color-text-link: 255 234 53; /* #ffea35 */
+      --color-text-error: 255 35 35; /* #ff2323 */
+  
+      /* Background colors */
+      --color-bg-light: 255 255 255; /* #ffffff */
+      --color-bg-black: 0 0 0; /* #000000 */
+      --color-bg-primary: 255 234 53; /* #ffea35 */
+      --color-bg-secondary: 80 80 80; /* #505050 */
+      --color-bg-tertiary: 20 20 20; /* #141414 */
+      --color-bg-quaternary: 13 13 13; /* #0D0D0D */
+      --color-bg-success: 38 178 76; /* #26B24C */
+      --color-bg-error: 213 43 30; /* #D52B1E */
+  
+      /* Easings */
+      --easing-default: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      --ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+      --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+  
+      /* z-index */
+      --header-z-index: 1000;
+      --menu-mobile-z-index: 900;
+  
+      @screen sm {
+        --header-height: 54px;
+      }
+    }
+  
+    /*
+    * Radial gradient for Safari
+    * we use this to override some styles of the background radial gradients only on safari
+    */
+    _::-webkit-full-page-media,
+    _:future,
+    :root .radial-gradient-only-safari {
+      background-image: radial-gradient(
+        50% 50% at 50% 50%,
+        hsla(0, 0%, 52%, 1) 0,
+        transparent 100%
+      ) !important;
+      opacity: 0.23;
+    }
+  
+    .display-1 {
+      font-size: 44px;
+      line-height: 48px;
+      letter-spacing: -0.0525em;
+    }
+  
+    /* Heading 1 */
+    h1,
+    .h1,
+    .heading-1 {
+      font-style: normal;
+      font-weight: 400;
+      line-height: clamp(36px, 12vw, 45px);
+      font-size: clamp(36px, 10.667vw, 40px);
+      letter-spacing: -0.0525em;
+    }
+  
+    /* Heading 2 */
+    h2,
+    .h2,
+    .heading-2 {
+      font-style: normal;
+      font-weight: 400;
+      line-height: 40px;
+      font-size: 36px;
+      letter-spacing: -0.0525em;
+    }
+  
+    /* Heading 3 */
+    h3,
+    .h3,
+    .heading-3 {
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      font-size: 20px;
+      letter-spacing: -0.0525em;
+    }
+  
+    /* Medium title */
+    .medium-title {
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: -0.0525em;
+    }
+  
+    /* Pre-head */
+    h4,
+    .h4,
+    .heading-4,
+    h5,
+    .h5,
+    .heading-5,
+    h6,
+    .h6,
+    .heading-6,
+    .pre-head,
+    .big-paragraph {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.0125em;
+    }
+  
+    /* Buttons text */
+    .button-text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.0125em;
+    }
+  
+    /* Normal text */
+    p,
+    .p,
+    .paragraph {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: -0.0125em;
+    }
+  
+    /* Small text */
+    small,
+    .small {
+      font-size: 13px;
+      line-height: 20px;
+      letter-spacing: -0.0125em;
+    }
+  
+    /* Label */
+    label,
+    .label {
+      font-size: 12px;
+      line-height: 14.4px;
+      letter-spacing: -0.0125em;
+    }
+  
+    @screen md {
+      .display-1 {
+        font-size: 80px;
+        line-height: 72px;
+        letter-spacing: -0.0525em;
+      }
+  
+      h1,
+      .h1,
+      .heading-1 {
+        line-height: 64px;
+        font-size: 56px;
+      }
+  
+      h2,
+      .h2,
+      .heading-2 {
+        line-height: 56px;
+        font-size: 54px;
+      }
+  
+      h3,
+      .h3,
+      .heading-3 {
+        line-height: 40px;
+        font-size: 32px;
+      }
+  
+      .medium-title {
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -0.0125em;
+      }
+  
+      h4,
+      .h4,
+      .heading-4,
+      h5,
+      .h5,
+      .heading-5,
+      h6,
+      .h6,
+      .heading-6,
+      .pre-head,
+      .big-paragraph {
+        font-size: 18px;
+      }
+  
+      p,
+      .p,
+      .paragraph {
+        line-height: 24px;
+        font-size: 16px;
+      }
+  
+      small,
+      .small {
+        letter-spacing: 0.0075em;
+        font-size: 14px;
+      }
+    }
+  
+    html {
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      background-color: rgb(var(--color-bg-black));
+      color: rgb(var(--color-text-white));
+      font-family: var(--font-plain);
+      color-scheme: dark;
+    }
+  
+    /* Ensure interactive elements have a visible focus state */
+    a:focus-visible,
+    button:focus-visible {
+      outline: 2px solid
+        var(--focus-visible-outline-color, rgb(var(--color-text-tertiary)));
+      outline-offset: 3px;
+    }
+  
+    /*
+    * Autofill styles
+    */
+    input:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0px 1000px #192334 inset;
+      box-shadow: 0 0 0px 1000px #192334 inset;
+      -webkit-text-fill-color: rgb(var(--color-text-white)) !important;
+      border: 1.5px solid rgb(var(--color-bg-secondary)) !important;
+      background-clip: padding-box; /* Helps improve the appearance of the borders in Safari */
+  
+      + label {
+        -webkit-text-fill-color: rgb(var(--color-text-white)) !important;
+      }
+    }
+  
+    /*
+    * Image zoom used in primitives/image-with-zoom
+    * Is using this package: https://github.com/yury-sannikov/react-medium-image-zoom
+    */
+    .cms-image-zoom [data-rmiz-modal-overlay],
+    .cms-image-zoom [data-rmiz-modal-img] {
+      transition-duration: 0.25s;
+      transition-timing-function: cubic-bezier(0.38, 0.01, 0.33, 1);
+    }
+    .cms-image-zoom [data-rmiz-modal-overlay="hidden"] {
+      background-color: rgb(0, 0, 0, 0);
+    }
+    .cms-image-zoom [data-rmiz-modal-overlay="visible"] {
+      background-color: rgb(0, 0, 0, 0.7);
+    }
+    .cms-image-zoom [data-rmiz-btn-unzoom] {
+      opacity: 0;
+      cursor: default;
+    }
+  }
+  
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
